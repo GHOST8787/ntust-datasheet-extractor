@@ -1,0 +1,15 @@
+PDF Extractor: multimodal_toc
+LLM Backend:   azure_foundry:gpt-4o
+Overall: 87/110 = 79.1%
+
+Per-part:
+  1N4148W          10/ 11 =  90.9%
+  BAS16            10/ 11 =  90.9%
+  BAS21H            8/ 11 =  72.7%
+  BAT750           10/ 11 =  90.9%
+  BAV99W            6/ 11 =  54.5%
+  CD4148WTP         8/ 11 =  72.7%
+  DFLS160           9/ 11 =  81.8%
+  MBR15U150         9/ 11 =  81.8%
+  MSB30M            8/ 11 =  72.7%
+  SBR05U20LPS       9/ 11 =  81.8%

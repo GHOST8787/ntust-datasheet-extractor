@@ -1,0 +1,168 @@
+C:\Users\sunny\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.4.3)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[backend]      azure_foundry:gpt-4o
+[pdf extractor] pdfplumber
+[critic mode]   strict
+[1/4] 載入標準答案
+      共 10 顆元件
+[2/4] PDF 抽取 + LLM 推理
+      - 1N4148W
+        [round 1] critic FAIL, 5 corrections
+          · Maximum Operating Temperature (°C): 現值 125，應改為 150；datasheet 中 Tj (Junction Temperature Range) 為 -55 to +150°C，而非 -55 to
+          · Maximum Height (mm): 現值 1.62，應改為 null；datasheet 中 Mechanical Dimensions 表未提供 Height (C) 的 MAX 值，只有 Min 和 Typ 值。
+          · I_O、I_F (A): 現值 0.3，應改為 0.3 (300mA ÷ 1000)；datasheet 中 Forward Continuous Current (IF) 為 300mA，需轉換為 A。
+        [round 2] critic FAIL, 5 corrections
+          · Maximum Operating Temperature (°C): 現值 150 錯誤，應改為 125；datasheet 中 Tj (Junction Temperature Range) 為 -55 到 +125°C，而 150°C
+          · Maximum Height (mm): 現值 null 錯誤，應改為 1.62；datasheet Mechanical Dimensions 表中 C 欄最大值為 1.62mm。
+          · I_O、I_F (A): 現值 0.3 錯誤，應改為 0.3 @Forward Continuous Current；datasheet中 I_F 為 300mA，應轉換為 0.3A。
+        [round 3] critic FAIL, 5 corrections
+          · Maximum Operating Temperature (°C): 現值 125 應改為 150；datasheet 中 Tj (Junction Temperature Range) 為 -55 到 +150°C，而非 -55 到 +
+          · Maximum Height (mm): 現值 1.62 應改為 null；datasheet Mechanical Dimensions 表中 C 的最大值為 1.62，但這是 'd' 的高度，應取 'A' 的最大值 1.90。
+          · I_O、I_F (A): 現值 0.3 應改為 0.3 @Forward Continuous Current；datasheet中未直接標註 I_O 和 I_F 的合併值，應分別標記 IF=300mA 和 IO=150mA。
+        [exhausted] 3 rounds done, using last answer
+      - BAS16
+        [round 1] critic FAIL, 10 corrections
+          · Minimum Operating Temperature(°C): 現值 '-65' 使用了 Tstg (Storage Temperature)，應改為 Tj (Junction Temperature) 的 -55。
+          · Maximum Operating Temperature(°C): 現值 '150' 使用了 Tstg (Storage Temperature)，應改為 Tj (Junction Temperature) 的 150。
+          · Maximum Length (mm): 現值 '2.9' 來自 Package Outline 的 MAX 值，正確。
+        [round 2] critic FAIL, 7 corrections
+          · Maximum Length (mm): 現值 '2.9' 應改為 '2.8'；datasheet Package Outline 圖中 MAX 值為 2.8 mm。
+          · Maximum Width (mm): 現值 '1.3' 應改為 '1.2'；datasheet Package Outline 圖中 MAX 值為 1.2 mm。
+          · Maximum Height (mm): 現值 '1.0' 應改為 '0.9'；datasheet Package Outline 圖中 MAX 值為 0.9 mm。
+        [round 3 validator] V_F: '0.715 @1mA, t ≤ 300 µs; δ ≤ 0.02; pulsed、0.855 @10mA, t ≤ 300 µs; δ ≤ 0.02; pulsed、1 @50mA, t ≤ 300 µs; δ ≤ 0.02; pulsed、1.25 @150mA, t ≤ 300 µs; δ ≤ 0.02; pulsed' → '0.715 @1mA、t ≤ 300 us、δ ≤ 0.02、pulsed、0.855 @10mA、t ≤ 300 us、δ ≤ 0.02、pulsed、1 @50mA、t ≤ 300 us、δ ≤ 0.02、pulsed、1.25 @150mA、t ≤ 300 us、δ ≤ 0.02、pulsed'
+        [round 3] critic FAIL, 7 corrections
+          · Minimum Operating Temperature(°C): 現值 '-65' 使用了 Tstg (Storage Temperature)，應改為 Tj (Junction Temperature) 的 -55。
+          · Maximum Operating Temperature(°C): 現值 '150' 使用了 Tstg (Storage Temperature)，應改為 Tj (Junction Temperature) 的 150。
+          · Maximum Length (mm): 現值 '2.8' 不符合 datasheet Package Outline 的最大值，應改為 '2.9'。
+        [exhausted] 3 rounds done, using last answer
+      - BAS21H
+        [round 1] critic FAIL, 5 corrections
+          · Maximum Length (mm): 現值 '1.7'，應該改成 '1.7'，但需確認是否來自 Package Dimensions 表的 MAX 欄位；datasheet中未明確標註 MAX，需進一步核實。
+          · Maximum Width (mm): 現值 '1.25'，應該改成 '1.25'，但需確認是否來自 Package Dimensions 表的 MAX 欄位；datasheet中未明確標註 MAX，需進一步核實。
+          · Maximum Height (mm): 現值 '0.85'，應該改成 '0.85'，但需確認是否來自 Package Dimensions 表的 MAX 欄位；datasheet中未明確標註 MAX，需進一步核實。
+        [round 2] critic FAIL, 9 corrections
+          · Minimum Operating Temperature(°C): 現值 -55 是正確的，但應明確標記為 Tj（Junction Temperature），datasheet 中 TJ 的範圍是 -55°C 至 150°C。
+          · Maximum Operating Temperature (°C): 現值 150 是正確的，但應明確標記為 Tj（Junction Temperature），datasheet 中 TJ 的範圍是 -55°C 至 150°C。
+          · Maximum Length (mm): 現值 1.7 是正確的，但應明確來源於 Mechanical Case Outline 表中 SOD-323 的最大值。
+        [round 3] critic FAIL, 8 corrections
+          · Minimum Operating Temperature(°C): 現值 -55 是正確的，但應明確標記為 Tj（Junction Temperature），datasheet 中 -55°C 是 Tj 而非 Tstg。
+          · Maximum Operating Temperature (°C): 現值 150 是正確的，但應明確標記為 Tj（Junction Temperature），datasheet 中 150°C 是 Tj 而非 Tstg。
+          · Maximum Length (mm): 現值 1.7 是正確的，但應明確來源於 Mechanical Case Outline 表中 SOD-323 尺寸。
+        [exhausted] 3 rounds done, using last answer
+      - BAT750
+        [round 1] critic FAIL, 5 corrections
+          · Maximum Operating Temperature (°C): 現值 '125' 應改為 '150'，datasheet 中 Tj (Operating Temperature Range) 為 -55 至 +150°C，而非 -5
+          · Maximum Height (mm): 現值 '1.15' 應改為 '1.10'，datasheet 中 SOT23 封裝的 A2 (Maximum Height) 為 1.10mm。
+          · PIN Number: 現值 '3' 應改為 '2'，datasheet 中 SOT23 封裝的實際接腳定義為 2（Schottky 二極體通常只有兩個接腳）。
+        [round 2] critic FAIL, 4 corrections
+          · Maximum Operating Temperature (°C): 現值 150，應改為 125；datasheet 中 Tj (Operating Temperature Range) 為 -55 至 +125°C。
+          · Maximum Height (mm): 現值 1.1，應改為 1.15；datasheet Package Outline Dimensions 表中 A 的最大值為 1.15。
+          · V_F(Forward Voltage) (V): 現值 '0.34 @500mA、0.39 @750mA、0.42 @1000mA、0.475 @1500mA、0.42 @500mA (max)、0.49 @750mA (max)、0.5
+        [round 3] critic FAIL, 4 corrections
+          · Maximum Operating Temperature (°C): 現值 125 應改為 150；datasheet Thermal Characteristics 表中 TJ (Operating Temperature) 範圍為 -
+          · Maximum Height (mm): 現值 1.15 應改為 null；datasheet Package Outline Dimensions 表中未提供高度 (A1) 的最大值，僅提供範圍 0.00 至 0.10。
+          · V_F(Forward Voltage) (V): 現值包含 '0.28 @50mA (max)' 等條目，應移除；datasheet Electrical Characteristics 表中未列出 max 值對應 50mA 條件。
+        [exhausted] 3 rounds done, using last answer
+      - BAV99W
+        [round 1] critic FAIL, 7 corrections
+          · Minimum Operating Temperature(°C): 現值 -55 是正確的，但應該是 Maximum Operating Temperature(°C) 的最小值，datasheet 中 Tj 為 -55 到 150。
+          · Maximum Operating Temperature(°C): 現值 150 是正確的，但應該是 Minimum Operating Temperature(°C) 的最大值，datasheet 中 Tj 為 -55 到 150。
+          · Maximum Length (mm): 現值 2.1 可能是錯的，datasheet 中未提供具體的 body dimensions，應為 null。
+        [round 2] critic FAIL, 6 corrections
+          · Maximum Length (mm): 現值為 null，但 datasheet 未提供封裝尺寸表，應明確標記為 null。
+          · Maximum Width (mm): 現值為 null，但 datasheet 未提供封裝尺寸表，應明確標記為 null。
+          · Maximum Height (mm): 現值為 null，但 datasheet 未提供封裝尺寸表，應明確標記為 null。
+        [round 3] critic FAIL, 10 corrections
+          · Minimum Operating Temperature(°C): 現值 -55 是正確的，但應該標記為 Tj (Junction) 而非 Tstg (Storage)，datasheet 中 Tj 為 -55°C。
+          · Maximum Operating Temperature (°C): 現值 150 是正確的，但應該標記為 Tj (Junction) 而非 Tstg (Storage)，datasheet 中 Tj 為 150°C。
+          · Maximum Length (mm): 現值 null，datasheet 未提供封裝尺寸表，應保留 null。
+        [exhausted] 3 rounds done, using last answer
+      - CD4148WTP
+        [round 1] critic FAIL, 7 corrections
+          · Minimum Operating Temperature(°C): 現值 -55 與 Maximum Operating Temperature(°C) 的範圍一致，應改為 Tj 的範圍；datasheet Thermal Charact
+          · Maximum Operating Temperature(°C): 現值 150 與 Minimum Operating Temperature(°C) 的範圍一致，應改為 Tj 的範圍；datasheet Thermal Charact
+          · Maximum Length (mm): 現值 1.55，應改為 1.55±0.1；datasheet Dimensions 表中 L 的最大值為 1.55+0.1=1.65。
+        [round 2] critic FAIL, 8 corrections
+          · Minimum Operating Temperature(°C): 現值 -55 是正確的，但應該標記為 Tj (Junction Temperature)，而不是 Tstg (Storage Temperature)。
+          · Maximum Operating Temperature (°C): 現值 150 是正確的，但應該標記為 Tj (Junction Temperature)，而不是 Tstg (Storage Temperature)。
+          · Maximum Length (mm): 現值 1.65 不正確，應改為 1.55，因為 datasheet 中 Dimensions 表中 L 的最大值為 1.55±0.1。
+        [round 3] critic FAIL, 8 corrections
+          · Minimum Operating Temperature(°C): 現值 -55 是正確的，但應標記為 Tj (Junction Temperature)，而不是 Tstg (Storage Temperature)。
+          · Maximum Operating Temperature (°C): 現值 150 是正確的，但應標記為 Tj (Junction Temperature)，而不是 Tstg (Storage Temperature)。
+          · Maximum Length (mm): 現值 1.55 是正確的，但應補充來源是 Package Outline 的 MAX 欄，並非其他表格。
+        [exhausted] 3 rounds done, using last answer
+      - DFLS160
+        [round 1] critic FAIL, 6 corrections
+          · Minimum Operating Temperature(°C): 現值 '-65' 是 Tstg (Storage) 的值，應改為 Tj 的值 '-55'。
+          · Maximum Length (mm): 現值 '1.93' 是正確的，但需確認是來自 Package Outline Dimensions 表的 MAX 欄。
+          · Maximum Width (mm): 現值 '3.9' 是正確的，但需確認是來自 Package Outline Dimensions 表的 MAX 欄。
+        [round 2] critic FAIL, 4 corrections
+          · Minimum Operating Temperature(°C): 現值 -55 與 Maximum Operating Temperature(°C) 現值 150 是 Tstg (Storage) 的範圍；應改用 Tj (Juncti
+          · Maximum Width (mm): 現值 3.9 是正確的，但 Maximum Length (mm) 現值 1.93 與 Maximum Height (mm) 現值 1.0 需確認；datasheet Package Outline
+          · V_F(Forward Voltage) (V): 現值 '0.50 @1.0A' 漏抓其他條件；datasheet Electrical Characteristics 表列 Forward Voltage VF 為 0.50V @1.0
+        [round 3] critic FAIL, 6 corrections
+          · Minimum Operating Temperature(°C): 現值 '-65' 使用了 Tstg (Storage) 的範圍；應改為 Tj (Junction) 的範圍，datasheet Thermal Characteristi
+          · Maximum Length (mm): 現值 '1.93' 正確，但應確認是來自 Package Outline Dimensions 表的 MAX 欄，非其他表格；datasheet中 MAX 欄確實為 1.93。
+          · Maximum Width (mm): 現值 '3.9' 正確，但應確認是來自 Package Outline Dimensions 表的 MAX 欄，非其他表格；datasheet中 MAX 欄確實為 3.90。
+        [exhausted] 3 rounds done, using last answer
+      - MBR15U150
+        [round 1] critic FAIL, 4 corrections
+          · Maximum Width (mm): 現值 5.5，應改為 5.50；datasheet Package Outline Dimensions 表中 MAX 欄位為 5.50。
+          · Maximum Height (mm): 現值 1.2，應改為 1.20；datasheet Package Outline Dimensions 表中 MAX 欄位為 1.20。
+          · V_F(Forward Voltage) (V): 現值 '0.75 @5A、0.85 @10A' 漏抓 15A 條件；datasheet Electrical Characteristics 表列了 5A / 10A / 15A 三個條件
+        [round 2] critic FAIL, 5 corrections
+          · Maximum Length (mm): 現值 '6.6'，應改為 '6.60'，datasheet Mechanical Drawing 表中 MAX 值為 6.60。
+          · Maximum Width (mm): 現值 '5.5'，應改為 '5.50'，datasheet Mechanical Drawing 表中 MAX 值為 5.50。
+          · Maximum Height (mm): 現值 '1.2'，應改為 '1.20'，datasheet Mechanical Drawing 表中 MAX 值為 1.20。
+        [round 3] critic FAIL, 4 corrections
+          · Maximum Width (mm): 現值 5.5，應改為 5.50；datasheet Package Outline Dimensions 表中 MAX 欄位為 5.50。
+          · Maximum Height (mm): 現值 1.2，應改為 1.20；datasheet Package Outline Dimensions 表中 MAX 欄位為 1.20。
+          · V_F(Forward Voltage) (V): 現值 '0.65 @1A,25°C、0.75 @5A、0.85 @10A、0.95 @15A'，漏抓 0.55 @0.1A；datasheet Electrical Characteris
+        [exhausted] 3 rounds done, using last answer
+      - MSB30M
+        [round 1] critic FAIL, 5 corrections
+          · Maximum Width (mm): 現值 '7.4' 應改為 '7.40'，datasheet Package Outline Dimensions 表中 E 的最大值為 7.40。
+          · Maximum Height (mm): 現值 '1.5' 應改為 '1.50'，datasheet Package Outline Dimensions 表中 A 的最大值為 1.50。
+          · PIN Number: 現值 '4' 應改為 '2'，datasheet中封裝為 MSBL，屬於橋式整流封裝，實際接腳數為 2。
+        [round 2] critic FAIL, 5 corrections
+          · Maximum Length (mm): 現值 '6.7'，應改為 '6.70'，datasheet Package Outline Dimensions 表中 MAX 欄位為 6.70。
+          · Maximum Width (mm): 現值 '7.4'，應改為 '7.40'，datasheet Package Outline Dimensions 表中 MAX 欄位為 7.40。
+          · Maximum Height (mm): 現值 '1.5'，應改為 '1.50'，datasheet Package Outline Dimensions 表中 MAX 欄位為 1.50。
+        [round 3] critic FAIL, 5 corrections
+          · Maximum Length (mm): 現值 '6.7'，應改為 '6.70'，datasheet Package Outline Dimensions 表中 MAX 欄為 6.70。
+          · Maximum Width (mm): 現值 '7.4'，應改為 '7.40'，datasheet Package Outline Dimensions 表中 MAX 欄為 7.40。
+          · Maximum Height (mm): 現值 '1.5'，應改為 '1.50'，datasheet Package Outline Dimensions 表中 MAX 欄為 1.50。
+        [exhausted] 3 rounds done, using last answer
+      - SBR05U20LPS
+        [round 1] critic FAIL, 6 corrections
+          · Minimum Operating Temperature(°C): 現值 '-65' 錯誤，應改為 '-55'，因為 datasheet 中 -65 是 Tstg (Storage Temperature)，而 Tj (Operating
+          · Maximum Length (mm): 現值 '1.075' 錯誤，應改為 null，因為 datasheet 中的 1.075 是封裝尺寸的 MAX 值，但屬於焊墊建議尺寸 (Suggested Pad Layout)，而非實際封裝尺寸
+          · Maximum Width (mm): 現值 '0.675' 錯誤，應改為 null，因為 datasheet 中的 0.675 是封裝尺寸的 MAX 值，但屬於焊墊建議尺寸 (Suggested Pad Layout)，而非實際封裝尺寸。
+        [round 2] critic FAIL, 5 corrections
+          · Minimum Operating Temperature(°C): 現值 '-55' 是正確的，但應明確標記為 Tj (Junction) 而非 Tstg (Storage)，datasheet 中 Tj 和 Tstg 的範圍相同。
+          · Maximum Operating Temperature(°C): 現值 '150' 是正確的，但應明確標記為 Tj (Junction) 而非 Tstg (Storage)，datasheet 中 Tj 和 Tstg 的範圍相同。
+          · Maximum Height (mm): 現值 '0.4' 是錯誤的，應改為 '0.40'，來自 Package Outline Dimensions 表中 A 欄的 MAX 值。
+        [round 3] critic FAIL, 6 corrections
+          · Minimum Operating Temperature(°C): 現值 '-65' 是 Tstg (Storage) 的值，應改為 Tj (Junction) 的值 '-55'。
+          · Maximum Length (mm): 現值 '1.075' 是正確的。
+          · Maximum Width (mm): 現值 '0.675' 是正確的。
+        [exhausted] 3 rounds done, using last answer
+[3/4] 評估比對
+[4/4] 寫出 Excel
+      → C:\Users\sunny\Desktop\2025_NTUST\20260508_期末作業\output\results_v3.xlsx
+[5/5] 自動歸檔
+      → C:\Users\sunny\Desktop\2025_NTUST\20260508_期末作業\output\_archive\v3_dual_agent_pdfplumber_azure_gpt_4o_strict
+
+=== pdfplumber × azure_foundry:gpt-4o 整體準確率：81/110 = 73.6% ===
+
+各元件：
+  1N4148W           9/ 11 =  81.8%
+  BAS16             7/ 11 =  63.6%
+  BAS21H            8/ 11 =  72.7%
+  BAT750            8/ 11 =  72.7%
+  BAV99W            6/ 11 =  54.5%
+  CD4148WTP         8/ 11 =  72.7%
+  DFLS160           9/ 11 =  81.8%
+  MBR15U150         8/ 11 =  72.7%
+  MSB30M            8/ 11 =  72.7%
+  SBR05U20LPS      10/ 11 =  90.9%

@@ -1,0 +1,222 @@
+{
+  "1N4148W": {
+    "_image_reasoning": "第 1 張圖：看到一個 Package Outline 表，D MAX=3.99 / E MAX=1.85 / A MAX=1.90，單位 mm。頂視圖顯示 D 是水平方向（圖左到右）= Length，E 是垂直方向（圖上到下）= Width，A 是側視圖高度標註。第 2 張圖是 Electrical Characteristics 表，包含 Forward Voltage 和 Reverse Leakage Current 的測試條件與數值。第 3 張圖是 Mechanical Dimensions 表，確認了 SOD-123 封裝的尺寸與符號對應。",
+    "Part Number": "1N4148W",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 125,
+    "Maximum Length (mm)": 3.99,
+    "Maximum Width (mm)": 1.85,
+    "Maximum Height (mm)": 1.9,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.3,
+    "V_F(Forward Voltage) (V)": "0.715 @1mA、0.855 @10mA、1.00 @50mA、1.25 @150mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 75,
+    "I_R(Reverse Current) ": "2.5uA @75V、25nA @20V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  },
+  "BAS16": {
+    "_image_reasoning": "第 1 張圖：看到一個 Package Outline 表，D MAX=2.9 / E MAX=1.3 / A MAX=1.0，單位 mm。頂視圖顯示 D 是水平方向（圖左到右）= Length，E 是垂直方向（圖上到下）= Width，A 是側視圖高度標註。第 2 張圖是 Limiting values 表，包含 Tj 和 VRRM 的最大值。第 3 張圖是 Characteristics 表，包含 VF 和 IR 的測試條件與值。",
+    "Part Number": "BAS16",
+    "Minimum Operating Temperature(°C)": -65,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 2.9,
+    "Maximum Width (mm)": 1.3,
+    "Maximum Height (mm)": 1.0,
+    "PIN Number": 3,
+    "I_O、I_F (A)": 0.215,
+    "V_F(Forward Voltage) (V)": "0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 100,
+    "I_R(Reverse Current) ": "30nA @25V、0.5uA @80V、30uA @25V,150°C、50uA @80V,150°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  },
+  "BAS21H": {
+    "_image_reasoning": "第 1 張圖：看到一個 Package Outline 表，D MAX=1.7 / E MAX=1.25 / A MAX=0.85，單位 mm。頂視圖顯示 D 是水平方向（圖左到右）= Length，E 是垂直方向（圖上到下）= Width，A 是側視圖高度標註。第 2 張圖是 Electrical Characteristics 表，提供了 V_F 和 I_R 的測試條件與數值。第 3 張圖是 Typical Characteristics 圖表，顯示了 Forward Voltage 和 Reverse Leakage 的曲線，但不影響主要參數提取。",
+    "Part Number": "BAS21H",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.7,
+    "Maximum Width (mm)": 1.25,
+    "Maximum Height (mm)": 0.85,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.2,
+    "V_F(Forward Voltage) (V)": "1.0 @100mA、1.25 @200mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 250,
+    "I_R(Reverse Current) ": "0.1uA @200V、100uA @200V,150°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  },
+  "BAT750": {
+    "_image_reasoning": "第 1 張圖：無機械尺寸相關資訊。第 2 張圖：無機械尺寸相關資訊。第 3 張圖：無機械尺寸相關資訊。第 4 張圖：看到 Package Outline Dimensions 表，D MAX=3.00mm / E MAX=2.55mm / A MAX=1.15mm，單位 mm。頂視圖顯示 D 是水平方向（圖左到右）= Length，E 是垂直方向（圖上到下）= Width，A 是側視圖高度標註。第 5 張圖：無機械尺寸相關資訊。",
+    "Part Number": "BAT750",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 125,
+    "Maximum Length (mm)": 3.0,
+    "Maximum Width (mm)": 2.55,
+    "Maximum Height (mm)": 1.15,
+    "PIN Number": 3,
+    "I_O、I_F (A)": 0.75,
+    "V_F(Forward Voltage) (V)": "0.225 @50mA、0.235 @100mA、0.29 @250mA、0.34 @500mA、0.39 @750mA、0.42 @1000mA、0.475 @1500mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 40,
+    "I_R(Reverse Current) ": "50uA @30V、100uA @30V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  },
+  "BAV99W": {
+    "_image_reasoning": "第 1 張圖：看到 Electrical Characteristics 表，Forward voltage (V_F) 的測試條件與最大值分別為 0.715V @1mA、0.855V @10mA、1.00V @50mA、1.25V @150mA；Reverse current (I_R) 的測試條件與最大值分別為 30nA @25V、200nA @80V。第 2 張圖：Land Pattern Dimensions 表，僅供參考，不應取用。第 3 張圖：Characteristics Curves，顯示 Forward voltage 與 Reverse current 的曲線圖，無需取用。",
+    "Part Number": "BAV99W",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": null,
+    "Maximum Width (mm)": null,
+    "Maximum Height (mm)": null,
+    "PIN Number": 3,
+    "I_O、I_F (A)": 0.15,
+    "V_F(Forward Voltage) (V)": "0.715 @1mA、0.855 @10mA、1.00 @50mA、1.25 @150mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 100,
+    "I_R(Reverse Current) ": "30nA @25V、200nA @80V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  },
+  "CD4148WTP": {
+    "_image_reasoning": "第 1 張圖：看到一個 Package Outline 表，L MAX=1.55mm / W MAX=0.80mm / T MAX=0.65mm，單位 mm。頂視圖顯示 L 是水平方向（圖左到右）= Length，W 是垂直方向（圖上到下）= Width，T 是側視圖高度標註。第 2 張圖是 Maximum Rating 和 Electrical Characteristics 表，包含 V_RRM=75V、I_F(AV)=100mA、V_F 和 I_R 的測試條件與值。第 3 張圖是測試特性與焊接條件，無需取用。",
+    "Part Number": "CD4148WTP",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.55,
+    "Maximum Width (mm)": 0.8,
+    "Maximum Height (mm)": 0.65,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.1,
+    "V_F(Forward Voltage) (V)": "1.0 @10mA、1.25 @100mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 75,
+    "I_R(Reverse Current) ": "0.025uA @20V、5uA @75V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  },
+  "DFLS160": {
+    "_image_reasoning": "第 1 張圖：無機械尺寸相關資訊。第 2 張圖：無機械尺寸相關資訊。第 3 張圖：無機械尺寸相關資訊。第 4 張圖：看到 Package Outline Dimensions 表，D MAX=1.93 / E MAX=3.90 / A MAX=1.00，單位 mm。頂視圖顯示 D 是水平方向（圖左到右）= Length，E 是垂直方向（圖上到下）= Width，A 是側視圖高度標註。第 5 張圖：無機械尺寸相關資訊。",
+    "Part Number": "DFLS160",
+    "Minimum Operating Temperature(°C)": -65,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.93,
+    "Maximum Width (mm)": 3.9,
+    "Maximum Height (mm)": 1.0,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 1.0,
+    "V_F(Forward Voltage) (V)": "0.50 @1.0A",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 60,
+    "I_R(Reverse Current) ": "0.1mA @60V,25°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  },
+  "MBR15U150": {
+    "_image_reasoning": "第 1 張圖：看到一個 Package Outline 表，D MAX=5.50 / E MAX=1.00 / A MAX=4.10，單位 mm。頂視圖顯示 D 是水平方向（圖左到右）= Length，E 是垂直方向（圖上到下）= Width，A 是側視圖高度標註。第 2 張圖是 Curve Characteristics，不應取用。",
+    "Part Number": "MBR15U150",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 5.5,
+    "Maximum Width (mm)": 1.0,
+    "Maximum Height (mm)": 4.1,
+    "PIN Number": 3,
+    "I_O、I_F (A)": 15.0,
+    "V_F(Forward Voltage) (V)": "0.80 @15A,25°C、0.68 @15A,125°C",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 150,
+    "I_R(Reverse Current) ": "10uA @150V,25°C、2mA @150V,125°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  },
+  "MSB30M": {
+    "_image_reasoning": "第 1 張圖：未包含機械尺寸表，僅有產品摘要與應用描述。第 2 張圖：未包含機械尺寸表，僅有電氣特性與熱特性數據。第 3 張圖：未包含機械尺寸表，僅有曲線圖。第 4 張圖：包含 Package Outline Dimensions 表，D MAX=6.70mm / E MAX=7.40mm / A MAX=1.50mm，單位 mm。D 是水平方向（圖左到右）= Length，E 是垂直方向（圖上到下）= Width，A 是側視圖高度標註。第 5 張圖：未包含機械尺寸表，僅有免責聲明。",
+    "Part Number": "MSB30M",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 6.7,
+    "Maximum Width (mm)": 7.4,
+    "Maximum Height (mm)": 1.5,
+    "PIN Number": 4,
+    "I_O、I_F (A)": 3.0,
+    "V_F(Forward Voltage) (V)": "1.02 @1.5A、1.1 @3.0A",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 1000,
+    "I_R(Reverse Current) ": "5uA @1000V,25°C、500uA @1000V,125°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  },
+  "SBR05U20LPS": {
+    "_image_reasoning": "第 1 張圖：看到一個 Package Outline 表，D MAX=1.075 / E MAX=0.675 / A MAX=0.40，單位 mm。頂視圖顯示 D 是水平方向（圖左到右）= Length，E 是垂直方向（圖上到下）= Width，A 是側視圖高度標註。第 2 張圖是 Maximum Ratings 和 Electrical Characteristics 表，提供了溫度、電流、電壓等參數。第 3 張圖是圖表，顯示 Forward Characteristics 和 Reverse Characteristics，不影響機械尺寸判斷。",
+    "Part Number": "SBR05U20LPS",
+    "Minimum Operating Temperature(°C)": -65,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.075,
+    "Maximum Width (mm)": 0.675,
+    "Maximum Height (mm)": 0.4,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.5,
+    "V_F(Forward Voltage) (V)": "0.38 @0.1A,25°C、0.28 @0.1A,150°C、0.42 @0.2A,25°C、0.34 @0.2A,150°C、0.50 @0.5A,25°C、0.45 @0.5A,150°C",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 20,
+    "I_R(Reverse Current) ": "6uA @20V,25°C、50uA @20V,150°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  }
+}

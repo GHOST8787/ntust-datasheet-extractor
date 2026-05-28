@@ -1,0 +1,545 @@
+{
+  "1N4148W": {
+    "Part Number": "1N4148W",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 125,
+    "Maximum Length (mm)": 3.99,
+    "Maximum Width (mm)": 1.85,
+    "Maximum Height (mm)": 1.62,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.3,
+    "V_F(Forward Voltage) (V)": "0.715 @1mA、0.855 @10mA、1.00 @50mA、1.25 @150mA、1.8 @500mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 75,
+    "I_R(Reverse Current) ": "2.5uA @75V、25nA @20V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Operating Temperature (°C): 現值 125，應改為 150；datasheet 中 Tj (Junction Temperature Range) 為 -55 to +150°C，而非 -55 to +125°C。",
+          "Maximum Height (mm): 現值 1.62，應改為 null；datasheet 中 Mechanical Dimensions 表未提供 Height (C) 的 MAX 值，只有 Min 和 Typ 值。",
+          "I_O、I_F (A): 現值 0.3，應改為 0.3 (300mA ÷ 1000)；datasheet 中 Forward Continuous Current (IF) 為 300mA，需轉換為 A。",
+          "V_F(Forward Voltage) (V): 現值 '0.715 @1mA、0.855 @10mA、1.00 @50mA、1.25 @150mA'，應改為 '0.715 @1mA、0.855 @10mA、1.00 @50mA、1.25 @150mA'；datasheet 中 Forward Voltage (VFM) 表列了這些條件，但現值中多餘的空格和標點需修正。",
+          "I_R(Reverse Current): 現值 '2.5uA @75V、25nA @20V'，應改為 '2.5uA @75V、25nA @20V'；datasheet 中 Reverse Leakage Current (IRM) 表列了這些條件，但現值中多餘的空格和標點需修正。"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Operating Temperature (°C): 現值 150 錯誤，應改為 125；datasheet 中 Tj (Junction Temperature Range) 為 -55 到 +125°C，而 150°C 是 Tstg (Storage Temperature Range)。",
+          "Maximum Height (mm): 現值 null 錯誤，應改為 1.62；datasheet Mechanical Dimensions 表中 C 欄最大值為 1.62mm。",
+          "I_O、I_F (A): 現值 0.3 錯誤，應改為 0.3 @Forward Continuous Current；datasheet中 I_F 為 300mA，應轉換為 0.3A。",
+          "V_F(Forward Voltage) (V): 現值 '0.715 @1mA、0.855 @10mA、1.00 @50mA、1.25 @150mA' 錯誤，漏抓 1.8 @500mA 條件；datasheet Electrical Characteristics 表列了 1mA / 10mA / 50mA / 150mA / 500mA 五個條件。",
+          "I_R(Reverse Current): 現值 '2.5uA @75V、25nA @20V' 錯誤，漏抓高溫條件；datasheet Electrical Characteristics 表中僅列 25°C 條件，未包含高溫條件（如 125°C）。"
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Operating Temperature (°C): 現值 125 應改為 150；datasheet 中 Tj (Junction Temperature Range) 為 -55 到 +150°C，而非 -55 到 +125°C。",
+          "Maximum Height (mm): 現值 1.62 應改為 null；datasheet Mechanical Dimensions 表中 C 的最大值為 1.62，但這是 'd' 的高度，應取 'A' 的最大值 1.90。",
+          "I_O、I_F (A): 現值 0.3 應改為 0.3 @Forward Continuous Current；datasheet中未直接標註 I_O 和 I_F 的合併值，應分別標記 IF=300mA 和 IO=150mA。",
+          "V_F(Forward Voltage) (V): 現值 '0.715 @1mA、0.855 @10mA、1.00 @50mA、1.25 @150mA、1.8 @500mA' 漏抓 500mA 條件；datasheet Electrical Characteristics 表列了 1mA / 10mA / 50mA / 150mA / 500mA 五個條件。",
+          "I_R(Reverse Current): 現值 '2.5uA @75V、25nA @20V' 漏抓高溫條件；datasheet中未列出高溫條件，應補充高溫條件或確認是否存在。"
+        ]
+      }
+    ]
+  },
+  "BAS16": {
+    "Part Number": "BAS16",
+    "Minimum Operating Temperature(°C)": -65,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 2.8,
+    "Maximum Width (mm)": 1.2,
+    "Maximum Height (mm)": 0.9,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.215,
+    "V_F(Forward Voltage) (V)": "0.715 @1mA、t ≤ 300 us、δ ≤ 0.02、pulsed、0.855 @10mA、t ≤ 300 us、δ ≤ 0.02、pulsed、1 @50mA、t ≤ 300 us、δ ≤ 0.02、pulsed、1.25 @150mA、t ≤ 300 us、δ ≤ 0.02、pulsed",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 100,
+    "I_R(Reverse Current) ": "30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V,150°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 '-65' 使用了 Tstg (Storage Temperature)，應改為 Tj (Junction Temperature) 的 -55。",
+          "Maximum Operating Temperature(°C): 現值 '150' 使用了 Tstg (Storage Temperature)，應改為 Tj (Junction Temperature) 的 150。",
+          "Maximum Length (mm): 現值 '2.9' 來自 Package Outline 的 MAX 值，正確。",
+          "Maximum Width (mm): 現值 '1.3' 來自 Package Outline 的 MAX 值，正確。",
+          "Maximum Height (mm): 現值 '1.0' 來自 Package Outline 的 MAX 值，正確。",
+          "PIN Number: 現值 '3' 正確，封裝為 SOT23，且 datasheet 定義了 3 個接腳。",
+          "I_O、I_F (A): 現值 '0.215' 正確，datasheet 定義了 I_F 最大值為 215 mA。",
+          "V_F(Forward Voltage) (V): 現值 '0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA' 正確，所有條件均已列出且單位正確。",
+          "V_RRM(Peak Repetitive Reverse Voltage) (V): 現值 '100' 正確，datasheet 定義了 V_RRM 為 100 V。",
+          "I_R(Reverse Current): 現值 '30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V,150°C' 正確，所有條件均已列出且單位正確。"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): 現值 '2.9' 應改為 '2.8'；datasheet Package Outline 圖中 MAX 值為 2.8 mm。",
+          "Maximum Width (mm): 現值 '1.3' 應改為 '1.2'；datasheet Package Outline 圖中 MAX 值為 1.2 mm。",
+          "Maximum Height (mm): 現值 '1.0' 應改為 '0.9'；datasheet Package Outline 圖中 MAX 值為 0.9 mm。",
+          "PIN Number: 現值 '3' 應改為 '2'；datasheet Pinning Information 表中顯示 SOT23 封裝有 2 個有效接腳（1 和 3），2 號腳為 'not connected'。",
+          "I_O、I_F (A): 現值 '0.215' 應改為 '0.215 mA'；datasheet Limiting Values 表中 I_F 單位為 mA，需換算為 A（0.215 ÷ 1000 = 0.000215 A）。",
+          "V_F(Forward Voltage) (V): 現值 '0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA' 漏抓條件；datasheet Characteristics 表中列出條件包含 't ≤ 300 µs; δ ≤ 0.02; pulsed'，應補充完整條件。",
+          "I_R(Reverse Current): 現值 '30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V,150°C' 單位不一致；datasheet 使用 'µA'，應統一改為 'uA'。"
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [
+          "V_F: '0.715 @1mA, t ≤ 300 µs; δ ≤ 0.02; pulsed、0.855 @10mA, t ≤ 300 µs; δ ≤ 0.02; pulsed、1 @50mA, t ≤ 300 µs; δ ≤ 0.02; pulsed、1.25 @150mA, t ≤ 300 µs; δ ≤ 0.02; pulsed' → '0.715 @1mA、t ≤ 300 us、δ ≤ 0.02、pulsed、0.855 @10mA、t ≤ 300 us、δ ≤ 0.02、pulsed、1 @50mA、t ≤ 300 us、δ ≤ 0.02、pulsed、1.25 @150mA、t ≤ 300 us、δ ≤ 0.02、pulsed'"
+        ],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 '-65' 使用了 Tstg (Storage Temperature)，應改為 Tj (Junction Temperature) 的 -55。",
+          "Maximum Operating Temperature(°C): 現值 '150' 使用了 Tstg (Storage Temperature)，應改為 Tj (Junction Temperature) 的 150。",
+          "Maximum Length (mm): 現值 '2.8' 不符合 datasheet Package Outline 的最大值，應改為 '2.9'。",
+          "Maximum Width (mm): 現值 '1.2' 不符合 datasheet Package Outline 的最大值，應改為 '1.3'。",
+          "Maximum Height (mm): 現值 '0.9' 不符合 datasheet Package Outline 的最大值，應改為 '1.0'。",
+          "V_F(Forward Voltage) (V): 現值包含多餘條件 't ≤ 300 us、δ ≤ 0.02、pulsed'，應簡化為 '0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA'。",
+          "I_R(Reverse Current): 現值 '30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V,150°C' 漏抓 datasheet 中的 'V_R = 25V, T = -40°C' 和 'V_R = 80V, T = -40°C' 條件。"
+        ]
+      }
+    ]
+  },
+  "BAS21H": {
+    "Part Number": "BAS21H",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.7,
+    "Maximum Width (mm)": 1.25,
+    "Maximum Height (mm)": 0.85,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.2,
+    "V_F(Forward Voltage) (V)": "1.0 @100mA、1.25 @200mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 250,
+    "I_R(Reverse Current) ": "0.1uA @200V、100uA @200V,150°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): 現值 '1.7'，應該改成 '1.7'，但需確認是否來自 Package Dimensions 表的 MAX 欄位；datasheet中未明確標註 MAX，需進一步核實。",
+          "Maximum Width (mm): 現值 '1.25'，應該改成 '1.25'，但需確認是否來自 Package Dimensions 表的 MAX 欄位；datasheet中未明確標註 MAX，需進一步核實。",
+          "Maximum Height (mm): 現值 '0.85'，應該改成 '0.85'，但需確認是否來自 Package Dimensions 表的 MAX 欄位；datasheet中未明確標註 MAX，需進一步核實。",
+          "V_F(Forward Voltage) (V): 現值 '1.0 @100mA、1.25 @200mA'，漏抓 100mA 條件的典型值；datasheet Electrical Characteristics 表列了 Forward Voltage (IF = 100 mAdc) 為 1000mV (1.0V) 和 (IF = 200 mAdc) 為 1250mV (1.25V)，應補充完整。",
+          "I_R(Reverse Current): 現值 '0.1uA @200V、100uA @200V,150°C'，漏抓 25°C 條件；datasheet Electrical Characteristics 表列了 Reverse Voltage Leakage Current (VR = 200 Vdc) 為 0.1uA 和 (VR = 200 Vdc, TJ = 150°C) 為 100uA，應補充完整。"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 -55 是正確的，但應明確標記為 Tj（Junction Temperature），datasheet 中 TJ 的範圍是 -55°C 至 150°C。",
+          "Maximum Operating Temperature (°C): 現值 150 是正確的，但應明確標記為 Tj（Junction Temperature），datasheet 中 TJ 的範圍是 -55°C 至 150°C。",
+          "Maximum Length (mm): 現值 1.7 是正確的，但應明確來源於 Mechanical Case Outline 表中 SOD-323 的最大值。",
+          "Maximum Width (mm): 現值 1.25 是正確的，但應明確來源於 Mechanical Case Outline 表中 SOD-323 的最大值。",
+          "Maximum Height (mm): 現值 0.85 是正確的，但應明確來源於 Mechanical Case Outline 表中 SOD-323 的最大值。",
+          "I_O、I_F (A): 現值 0.2 是正確的，但應明確來源於 Maximum Ratings 表中 IF (Peak Forward Current) 的 200 mA，並已正確換算為 A。",
+          "V_F(Forward Voltage) (V): 現值 '1.0 @100mA、1.25 @200mA' 漏抓了測試條件的單位換算，datasheet 中 VF 為 1000 mV 和 1250 mV，應換算為 '1.0 @100mA、1.25 @200mA'。",
+          "V_RRM(Peak Repetitive Reverse Voltage) (V): 現值 250 是正確的，但應明確來源於 Maximum Ratings 表中 VRRM (Repetitive Peak Reverse Voltage)。",
+          "I_R(Reverse Current): 現值 '0.1uA @200V、100uA @200V,150°C' 是正確的，但應明確來源於 Electrical Characteristics 表中 IR (Reverse Voltage Leakage Current) 的兩個條件。"
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 -55 是正確的，但應明確標記為 Tj（Junction Temperature），datasheet 中 -55°C 是 Tj 而非 Tstg。",
+          "Maximum Operating Temperature (°C): 現值 150 是正確的，但應明確標記為 Tj（Junction Temperature），datasheet 中 150°C 是 Tj 而非 Tstg。",
+          "Maximum Length (mm): 現值 1.7 是正確的，但應明確來源於 Mechanical Case Outline 表中 SOD-323 尺寸。",
+          "Maximum Width (mm): 現值 1.25 是正確的，但應明確來源於 Mechanical Case Outline 表中 SOD-323 尺寸。",
+          "Maximum Height (mm): 現值 0.85 是正確的，但應明確來源於 Mechanical Case Outline 表中 SOD-323 尺寸。",
+          "I_O、I_F (A): 現值 0.2 是正確的，但應明確來源於 Maximum Ratings 表中 'Peak Forward Current (IF)'，且單位 mA 已正確換算為 A。",
+          "V_F(Forward Voltage) (V): 現值 '1.0 @100mA、1.25 @200mA' 漏抓了 datasheet Electrical Characteristics 表中 Forward Voltage 的測試條件，應補充完整條件為 '1.0 @100mA,25°C、1.25 @200mA,25°C'。",
+          "I_R(Reverse Current): 現值 '0.1uA @200V、100uA @200V,150°C' 是正確的，但應明確來源於 Electrical Characteristics 表中 Reverse Voltage Leakage Current 的測試條件。"
+        ]
+      }
+    ]
+  },
+  "BAT750": {
+    "Part Number": "BAT750",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 125,
+    "Maximum Length (mm)": 3.0,
+    "Maximum Width (mm)": 2.55,
+    "Maximum Height (mm)": 1.15,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.75,
+    "V_F(Forward Voltage) (V)": "0.225 @50mA、0.235 @100mA、0.29 @250mA、0.34 @500mA、0.39 @750mA、0.42 @1000mA、0.475 @1500mA、0.28 @50mA (max)、0.31 @100mA (max)、0.35 @250mA (max)、0.42 @500mA (max)、0.49 @750mA (max)、0.54 @1000mA (max)、0.65 @1500mA (max)",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 40,
+    "I_R(Reverse Current) ": "50uA @30V、100uA @30V (max),25°C、175uA @30V,125°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Operating Temperature (°C): 現值 '125' 應改為 '150'，datasheet 中 Tj (Operating Temperature Range) 為 -55 至 +150°C，而非 -55 至 +125°C。",
+          "Maximum Height (mm): 現值 '1.15' 應改為 '1.10'，datasheet 中 SOT23 封裝的 A2 (Maximum Height) 為 1.10mm。",
+          "PIN Number: 現值 '3' 應改為 '2'，datasheet 中 SOT23 封裝的實際接腳定義為 2（Schottky 二極體通常只有兩個接腳）。",
+          "V_F(Forward Voltage) (V): 現值 '0.34 @500mA、0.39 @750mA、0.42 @1000mA、0.475 @1500mA' 漏抓 750mA、1000mA 和 1500mA 條件的最大值，應改為 '0.34 @500mA、0.39 @750mA、0.42 @1000mA、0.475 @1500mA、0.42 @500mA (max)、0.49 @750mA (max)、0.54 @1000mA (max)、0.65 @1500mA (max)'。",
+          "I_R(Reverse Current): 現值 '50uA @30V' 漏抓最大值條件，應改為 '50uA @30V、100uA @30V (max)'，datasheet 中 Reverse Current 的最大值為 100uA。"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Operating Temperature (°C): 現值 150，應改為 125；datasheet 中 Tj (Operating Temperature Range) 為 -55 至 +125°C。",
+          "Maximum Height (mm): 現值 1.1，應改為 1.15；datasheet Package Outline Dimensions 表中 A 的最大值為 1.15。",
+          "V_F(Forward Voltage) (V): 現值 '0.34 @500mA、0.39 @750mA、0.42 @1000mA、0.475 @1500mA、0.42 @500mA (max)、0.49 @750mA (max)、0.54 @1000mA (max)、0.65 @1500mA (max)'，漏抓條件 50mA、100mA、250mA；datasheet Electrical Characteristics 表列了 50mA、100mA、250mA、500mA、750mA、1000mA、1500mA 共 7 個條件。",
+          "I_R(Reverse Current): 現值 '50uA @30V、100uA @30V (max)'，漏抓高溫條件；datasheet Electrical Characteristics 表中列出 25°C 和 125°C 的條件，應補充高溫條件。"
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Operating Temperature (°C): 現值 125 應改為 150；datasheet Thermal Characteristics 表中 TJ (Operating Temperature) 範圍為 -55 至 +150°C。",
+          "Maximum Height (mm): 現值 1.15 應改為 null；datasheet Package Outline Dimensions 表中未提供高度 (A1) 的最大值，僅提供範圍 0.00 至 0.10。",
+          "V_F(Forward Voltage) (V): 現值包含 '0.28 @50mA (max)' 等條目，應移除；datasheet Electrical Characteristics 表中未列出 max 值對應 50mA 條件。",
+          "I_R(Reverse Current): 現值 '50uA @30V、100uA @30V (max),25°C、175uA @30V,125°C' 漏抓 150°C 條件；datasheet Electrical Characteristics 表中列出 175uA @30V,150°C。"
+        ]
+      }
+    ]
+  },
+  "BAV99W": {
+    "Part Number": "BAV99W",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": null,
+    "Maximum Width (mm)": null,
+    "Maximum Height (mm)": null,
+    "PIN Number": 3,
+    "I_O、I_F (A)": 0.15,
+    "V_F(Forward Voltage) (V)": "0.715 @1mA、0.855 @10mA、1.0 @50mA、1.25 @150mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 100,
+    "I_R(Reverse Current) ": "30nA @25V、200nA @80V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 -55 是正確的，但應該是 Maximum Operating Temperature(°C) 的最小值，datasheet 中 Tj 為 -55 到 150。",
+          "Maximum Operating Temperature(°C): 現值 150 是正確的，但應該是 Minimum Operating Temperature(°C) 的最大值，datasheet 中 Tj 為 -55 到 150。",
+          "Maximum Length (mm): 現值 2.1 可能是錯的，datasheet 中未提供具體的 body dimensions，應為 null。",
+          "Maximum Width (mm): 現值 1.25 可能是錯的，datasheet 中未提供具體的 body dimensions，應為 null。",
+          "Maximum Height (mm): 現值 1.1 可能是錯的，datasheet 中未提供具體的 body dimensions，應為 null。",
+          "I_O、I_F (A): 現值 0.15 是錯的，datasheet 中 I_O 為 150 mA，應換算為 0.15 A。",
+          "I_R(Reverse Current): 現值 '30nA @25V、200nA @80V' 漏抓高溫條件，datasheet 中未列出高溫條件，應確認是否有遺漏。"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): 現值為 null，但 datasheet 未提供封裝尺寸表，應明確標記為 null。",
+          "Maximum Width (mm): 現值為 null，但 datasheet 未提供封裝尺寸表，應明確標記為 null。",
+          "Maximum Height (mm): 現值為 null，但 datasheet 未提供封裝尺寸表，應明確標記為 null。",
+          "PIN Number: 現值為 3，但 datasheet 提到封裝為 SOT-323，應確認接腳定義是否正確。",
+          "I_O、I_F (A): 現值為 0.15，但應為 0.15 A（Average rectified current I_O），單位正確但需確認是否來自正確欄位。",
+          "I_R(Reverse Current): 現值為 '30nA @25V、200nA @80V'，但 datasheet 中未列出溫度條件，應補充條件或確認是否正確。"
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 -55 是正確的，但應該標記為 Tj (Junction) 而非 Tstg (Storage)，datasheet 中 Tj 為 -55°C。",
+          "Maximum Operating Temperature (°C): 現值 150 是正確的，但應該標記為 Tj (Junction) 而非 Tstg (Storage)，datasheet 中 Tj 為 150°C。",
+          "Maximum Length (mm): 現值 null，datasheet 未提供封裝尺寸表，應保留 null。",
+          "Maximum Width (mm): 現值 null，datasheet 未提供封裝尺寸表，應保留 null。",
+          "Maximum Height (mm): 現值 null，datasheet 未提供封裝尺寸表，應保留 null。",
+          "PIN Number: 現值 3 是正確的，因為 datasheet 中封裝為 SOT-323，且引腳定義為 3 個。",
+          "I_O、I_F (A): 現值 0.15 是正確的，因為 datasheet 中 Average rectified current (I_O) 為 150 mA，已正確轉換為 0.15 A。",
+          "V_F(Forward Voltage) (V): 現值 '0.715 @1mA、0.855 @10mA、1.0 @50mA、1.25 @150mA' 是正確的，因為 datasheet 中列出了所有這些條件和對應值。",
+          "V_RRM(Peak Repetitive Reverse Voltage) (V): 現值 100 是正確的，因為 datasheet 中 V_RRM 為 100 V。",
+          "I_R(Reverse Current): 現值 '30nA @25V、200nA @80V' 是正確的，因為 datasheet 中列出了這兩個條件和對應值。"
+        ]
+      }
+    ]
+  },
+  "CD4148WTP": {
+    "Part Number": "CD4148WTP",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.55,
+    "Maximum Width (mm)": 0.8,
+    "Maximum Height (mm)": 0.65,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.1,
+    "V_F(Forward Voltage) (V)": "1.0 @10mA、1.25 @100mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 75,
+    "I_R(Reverse Current) ": "0.025uA @20V、5uA @75V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 -55 與 Maximum Operating Temperature(°C) 的範圍一致，應改為 Tj 的範圍；datasheet Thermal Characteristics 表中 Tj 為 -55 至 150°C。",
+          "Maximum Operating Temperature(°C): 現值 150 與 Minimum Operating Temperature(°C) 的範圍一致，應改為 Tj 的範圍；datasheet Thermal Characteristics 表中 Tj 為 -55 至 150°C。",
+          "Maximum Length (mm): 現值 1.55，應改為 1.55±0.1；datasheet Dimensions 表中 L 的最大值為 1.55+0.1=1.65。",
+          "Maximum Width (mm): 現值 0.8，應改為 0.80±0.1；datasheet Dimensions 表中 W 的最大值為 0.80+0.1=0.90。",
+          "Maximum Height (mm): 現值 0.65，應改為 0.65±0.1；datasheet Dimensions 表中 T 的最大值為 0.65+0.1=0.75。",
+          "V_F(Forward Voltage) (V): 現值 '1.0 @10mA、1.25 @100mA' 漏抓 datasheet Electrical Characteristics 表中所有條件；應改為 '1.0 @10mA、1.25 @100mA'。",
+          "I_R(Reverse Current): 現值 '0.025uA @20V、5uA @75V' 漏抓 datasheet Electrical Characteristics 表中所有條件；應改為 '0.025uA @20V、5uA @75V'。"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 -55 是正確的，但應該標記為 Tj (Junction Temperature)，而不是 Tstg (Storage Temperature)。",
+          "Maximum Operating Temperature (°C): 現值 150 是正確的，但應該標記為 Tj (Junction Temperature)，而不是 Tstg (Storage Temperature)。",
+          "Maximum Length (mm): 現值 1.65 不正確，應改為 1.55，因為 datasheet 中 Dimensions 表中 L 的最大值為 1.55±0.1。",
+          "Maximum Width (mm): 現值 0.9 不正確，應改為 0.8，因為 datasheet 中 Dimensions 表中 W 的最大值為 0.80±0.1。",
+          "Maximum Height (mm): 現值 0.75 不正確，應改為 0.65，因為 datasheet 中 Dimensions 表中 T 的最大值為 0.65±0.1。",
+          "I_O、I_F (A): 現值 0.1 不正確，應改為 0.1 (100mA ÷ 1000)，因為 datasheet 中 Average rectified current (I_F(AV)) 為 100mA。",
+          "V_F(Forward Voltage) (V): 現值 '1.0 @10mA、1.25 @100mA' 漏抓了 datasheet 中的所有條件，應補充完整條件。",
+          "I_R(Reverse Current): 現值 '0.025uA @20V、5uA @75V' 漏抓了高溫條件，datasheet 中僅列出 25°C 的條件，應確認是否有其他溫度條件。"
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 -55 是正確的，但應標記為 Tj (Junction Temperature)，而不是 Tstg (Storage Temperature)。",
+          "Maximum Operating Temperature (°C): 現值 150 是正確的，但應標記為 Tj (Junction Temperature)，而不是 Tstg (Storage Temperature)。",
+          "Maximum Length (mm): 現值 1.55 是正確的，但應補充來源是 Package Outline 的 MAX 欄，並非其他表格。",
+          "Maximum Width (mm): 現值 0.8 是正確的，但應補充來源是 Package Outline 的 MAX 欄，並非其他表格。",
+          "Maximum Height (mm): 現值 0.65 是正確的，但應補充來源是 Package Outline 的 MAX 欄，並非其他表格。",
+          "I_O、I_F (A): 現值 0.1 是錯誤的，應改為 0.1 (100mA ÷ 1000) 來自 I_F(AV) 的 Average Rectified Current。",
+          "V_F(Forward Voltage) (V): 現值 '1.0 @10mA、1.25 @100mA' 是正確的，但應補充來源是 Electrical Characteristics 表，並確認所有條件已完整列出。",
+          "I_R(Reverse Current): 現值 '0.025uA @20V、5uA @75V' 是正確的，但應補充來源是 Electrical Characteristics 表，並確認所有條件已完整列出。"
+        ]
+      }
+    ]
+  },
+  "DFLS160": {
+    "Part Number": "DFLS160",
+    "Minimum Operating Temperature(°C)": -65,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.93,
+    "Maximum Width (mm)": 3.9,
+    "Maximum Height (mm)": 1.0,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 1.0,
+    "V_F(Forward Voltage) (V)": "0.50 @1.0A",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 60,
+    "I_R(Reverse Current) ": "0.1mA @60V,25°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 '-65' 是 Tstg (Storage) 的值，應改為 Tj 的值 '-55'。",
+          "Maximum Length (mm): 現值 '1.93' 是正確的，但需確認是來自 Package Outline Dimensions 表的 MAX 欄。",
+          "Maximum Width (mm): 現值 '3.9' 是正確的，但需確認是來自 Package Outline Dimensions 表的 MAX 欄。",
+          "Maximum Height (mm): 現值 '1.0' 是正確的，但需確認是來自 Package Outline Dimensions 表的 MAX 欄。",
+          "V_F(Forward Voltage) (V): 現值 '0.50 @1.0A' 漏抓其他條件；datasheet Electrical Characteristics 表中僅列出 1.0A 條件，但需確認是否有其他條件未被列出。",
+          "I_R(Reverse Current): 現值 '0.1mA @60V,25°C' 漏抓高溫條件；datasheet 圖表中顯示有 -65°C 和 150°C 的條件，應補充這些條件。"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 -55 與 Maximum Operating Temperature(°C) 現值 150 是 Tstg (Storage) 的範圍；應改用 Tj (Junction) 的範圍，datasheet Thermal Characteristics 表列 Tj 為 -65 至 +150°C。",
+          "Maximum Width (mm): 現值 3.9 是正確的，但 Maximum Length (mm) 現值 1.93 與 Maximum Height (mm) 現值 1.0 需確認；datasheet Package Outline Dimensions 表中 Maximum Height 應為 1.00 mm，Maximum Length 應為 1.93 mm。",
+          "V_F(Forward Voltage) (V): 現值 '0.50 @1.0A' 漏抓其他條件；datasheet Electrical Characteristics 表列 Forward Voltage VF 為 0.50V @1.0A，應補充所有條件。",
+          "I_R(Reverse Current): 現值 '0.1mA @60V,25°C' 漏抓高溫條件；datasheet Electrical Characteristics 表列 Reverse Current IR 為 0.1mA @60V, TA=+25°C，但未包含高溫條件（例如 TA=+150°C）。"
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 '-65' 使用了 Tstg (Storage) 的範圍；應改為 Tj (Junction) 的範圍，datasheet Thermal Characteristics 表列 Tj 為 '-55°C 至 +150°C'",
+          "Maximum Length (mm): 現值 '1.93' 正確，但應確認是來自 Package Outline Dimensions 表的 MAX 欄，非其他表格；datasheet中 MAX 欄確實為 1.93。",
+          "Maximum Width (mm): 現值 '3.9' 正確，但應確認是來自 Package Outline Dimensions 表的 MAX 欄，非其他表格；datasheet中 MAX 欄確實為 3.90。",
+          "Maximum Height (mm): 現值 '1.0' 正確，但應確認是來自 Package Outline Dimensions 表的 MAX 欄，非其他表格；datasheet中 MAX 欄確實為 1.00。",
+          "V_F(Forward Voltage) (V): 現值 '0.50 @1.0A' 漏抓其他條件；datasheet Electrical Characteristics 表列 Forward Voltage 只有一個條件，但應確認是否有其他條件未被列出。",
+          "I_R(Reverse Current): 現值 '0.1mA @60V,25°C' 漏抓高溫條件；datasheet Fig. 2 顯示在 150°C 時的 Reverse Current 顯著增加，應補充高溫條件的數據。"
+        ]
+      }
+    ]
+  },
+  "MBR15U150": {
+    "Part Number": "MBR15U150",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 6.6,
+    "Maximum Width (mm)": 5.5,
+    "Maximum Height (mm)": 1.2,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 15.0,
+    "V_F(Forward Voltage) (V)": "0.65 @1A,25°C、0.75 @5A、0.85 @10A、0.95 @15A",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 150,
+    "I_R(Reverse Current) ": "5uA @50V,25°C、10uA @150V,25°C、500uA @150V,125°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Width (mm): 現值 5.5，應改為 5.50；datasheet Package Outline Dimensions 表中 MAX 欄位為 5.50。",
+          "Maximum Height (mm): 現值 1.2，應改為 1.20；datasheet Package Outline Dimensions 表中 MAX 欄位為 1.20。",
+          "V_F(Forward Voltage) (V): 現值 '0.75 @5A、0.85 @10A' 漏抓 15A 條件；datasheet Electrical Characteristics 表列了 5A / 10A / 15A 三個條件。",
+          "I_R(Reverse Current): 現值 '10uA @150V、500uA @150V,125°C' 漏抓 25°C 條件；datasheet Electrical Characteristics 表列了 25°C 與 125°C 兩個溫度條件。"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): 現值 '6.6'，應改為 '6.60'，datasheet Mechanical Drawing 表中 MAX 值為 6.60。",
+          "Maximum Width (mm): 現值 '5.5'，應改為 '5.50'，datasheet Mechanical Drawing 表中 MAX 值為 5.50。",
+          "Maximum Height (mm): 現值 '1.2'，應改為 '1.20'，datasheet Mechanical Drawing 表中 MAX 值為 1.20。",
+          "V_F(Forward Voltage) (V): 現值 '0.75 @5A、0.85 @10A、0.95 @15A'，漏抓 25°C 條件下的 0.65V @1A，datasheet Electrical Characteristics 表中列出此條件。",
+          "I_R(Reverse Current): 現值 '10uA @150V,25°C、500uA @150V,125°C'，漏抓 25°C 條件下的 5uA @50V，datasheet Electrical Characteristics 表中列出此條件。"
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Width (mm): 現值 5.5，應改為 5.50；datasheet Package Outline Dimensions 表中 MAX 欄位為 5.50。",
+          "Maximum Height (mm): 現值 1.2，應改為 1.20；datasheet Package Outline Dimensions 表中 MAX 欄位為 1.20。",
+          "V_F(Forward Voltage) (V): 現值 '0.65 @1A,25°C、0.75 @5A、0.85 @10A、0.95 @15A'，漏抓 0.55 @0.1A；datasheet Electrical Characteristics 表列了 0.1A、1A、5A、10A、15A 五個條件。",
+          "I_R(Reverse Current): 現值 '5uA @50V,25°C、10uA @150V,25°C、500uA @150V,125°C'，漏抓 100uA @150V,100°C；datasheet Electrical Characteristics 表列了 25°C、100°C、125°C 三個溫度條件。"
+        ]
+      }
+    ]
+  },
+  "MSB30M": {
+    "Part Number": "MSB30M",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 6.7,
+    "Maximum Width (mm)": 7.4,
+    "Maximum Height (mm)": 1.5,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 3.0,
+    "V_F(Forward Voltage) (V)": "1.02 @1.5A,25°C、0.80 @1.5A,125°C、1.10 @3.0A,25°C、0.88 @3.0A,125°C",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 1000,
+    "I_R(Reverse Current) ": "5uA @1000V,25°C、500uA @1000V,125°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Width (mm): 現值 '7.4' 應改為 '7.40'，datasheet Package Outline Dimensions 表中 E 的最大值為 7.40。",
+          "Maximum Height (mm): 現值 '1.5' 應改為 '1.50'，datasheet Package Outline Dimensions 表中 A 的最大值為 1.50。",
+          "PIN Number: 現值 '4' 應改為 '2'，datasheet中封裝為 MSBL，屬於橋式整流封裝，實際接腳數為 2。",
+          "V_F(Forward Voltage) (V): 現值 '1.02 @1.5A、0.80 @1.5A,125°C、1.1 @3.0A、0.88 @3.0A,125°C' 漏抓條件 '1.02 @1.5A,25°C'，datasheet Electrical Characteristics 表列了 1.5A / 3.0A 在 25°C 和 125°C 的所有條件。",
+          "I_R(Reverse Current): 現值 '0.31uA @1000V、5uA @1000V,25°C、500uA @1000V,125°C' 漏抓條件 '5uA @1000V,25°C'，datasheet Electrical Characteristics 表列了 25°C 和 125°C 的所有條件。"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): 現值 '6.7'，應改為 '6.70'，datasheet Package Outline Dimensions 表中 MAX 欄位為 6.70。",
+          "Maximum Width (mm): 現值 '7.4'，應改為 '7.40'，datasheet Package Outline Dimensions 表中 MAX 欄位為 7.40。",
+          "Maximum Height (mm): 現值 '1.5'，應改為 '1.50'，datasheet Package Outline Dimensions 表中 MAX 欄位為 1.50。",
+          "V_F(Forward Voltage) (V): 現值 '1.02 @1.5A,25°C、0.80 @1.5A,125°C、1.1 @3.0A,25°C、0.88 @3.0A,125°C'，應改為 '1.02 @1.5A,25°C、0.80 @1.5A,125°C、1.10 @3.0A,25°C、0.88 @3.0A,125°C'，datasheet Electrical Characteristics 表中 3.0A, 25°C 條件的 MAX 值為 1.10。",
+          "I_R(Reverse Current): 現值 '0.31uA @1000V、5uA @1000V,25°C、500uA @1000V,125°C'，應改為 '5uA @1000V,25°C、500uA @1000V,125°C'，datasheet 中未列出 0.31uA @1000V 的條件。"
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): 現值 '6.7'，應改為 '6.70'，datasheet Package Outline Dimensions 表中 MAX 欄為 6.70。",
+          "Maximum Width (mm): 現值 '7.4'，應改為 '7.40'，datasheet Package Outline Dimensions 表中 MAX 欄為 7.40。",
+          "Maximum Height (mm): 現值 '1.5'，應改為 '1.50'，datasheet Package Outline Dimensions 表中 MAX 欄為 1.50。",
+          "V_F(Forward Voltage) (V): 現值 '1.02 @1.5A,25°C、0.80 @1.5A,125°C、1.10 @3.0A,25°C、0.88 @3.0A,125°C'，漏抓條件 '1.1 @3.0A,25°C'，datasheet Electrical Characteristics 表中列出此條件。",
+          "I_R(Reverse Current): 現值 '5uA @1000V,25°C、500uA @1000V,125°C'，應改為 '0.31uA @1000V,25°C、500uA @1000V,125°C'，datasheet Electrical Characteristics 表中 25°C 條件為 0.31uA 而非 5uA。"
+        ]
+      }
+    ]
+  },
+  "SBR05U20LPS": {
+    "Part Number": "SBR05U20LPS",
+    "Minimum Operating Temperature(°C)": -65,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.075,
+    "Maximum Width (mm)": 0.675,
+    "Maximum Height (mm)": 0.4,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.5,
+    "V_F(Forward Voltage) (V)": "0.38 @100mA,25°C、0.28 @100mA,150°C、0.42 @200mA,25°C、0.34 @200mA,150°C、0.50 @500mA,25°C、0.45 @500mA,150°C、0.47 @500mA,25°C、0.42 @500mA,150°C",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 20,
+    "I_R(Reverse Current) ": "6uA @20V,25°C、50uA @20V,25°C、1.5mA @20V,150°C、5mA @20V,150°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 '-65' 錯誤，應改為 '-55'，因為 datasheet 中 -65 是 Tstg (Storage Temperature)，而 Tj (Operating Junction Temperature) 是 -55。",
+          "Maximum Length (mm): 現值 '1.075' 錯誤，應改為 null，因為 datasheet 中的 1.075 是封裝尺寸的 MAX 值，但屬於焊墊建議尺寸 (Suggested Pad Layout)，而非實際封裝尺寸。",
+          "Maximum Width (mm): 現值 '0.675' 錯誤，應改為 null，因為 datasheet 中的 0.675 是封裝尺寸的 MAX 值，但屬於焊墊建議尺寸 (Suggested Pad Layout)，而非實際封裝尺寸。",
+          "Maximum Height (mm): 現值 '0.4' 錯誤，應改為 null，因為 datasheet 中的 0.4 是封裝尺寸的 MAX 值，但屬於焊墊建議尺寸 (Suggested Pad Layout)，而非實際封裝尺寸。",
+          "V_F(Forward Voltage) (V): 現值 '0.38 @100mA,25°C、0.28 @100mA,150°C、0.42 @200mA,25°C、0.34 @200mA,150°C、0.50 @500mA,25°C、0.45 @500mA,150°C' 錯誤，應改為 '0.38 @100mA,25°C、0.28 @100mA,150°C、0.42 @200mA,25°C、0.34 @200mA,150°C、0.50 @500mA,25°C、0.45 @500mA,150°C'，因為 datasheet 中的測試條件已經正確，但需要確認格式是否完全一致。",
+          "I_R(Reverse Current): 現值 '50uA @20V,25°C、5mA @20V,150°C' 錯誤，應改為 '50uA @20V,25°C、5mA @20V,150°C'，因為 datasheet 中的測試條件已經正確，但需要確認格式是否完全一致。"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 '-55' 是正確的，但應明確標記為 Tj (Junction) 而非 Tstg (Storage)，datasheet 中 Tj 和 Tstg 的範圍相同。",
+          "Maximum Operating Temperature(°C): 現值 '150' 是正確的，但應明確標記為 Tj (Junction) 而非 Tstg (Storage)，datasheet 中 Tj 和 Tstg 的範圍相同。",
+          "Maximum Height (mm): 現值 '0.4' 是錯誤的，應改為 '0.40'，來自 Package Outline Dimensions 表中 A 欄的 MAX 值。",
+          "V_F(Forward Voltage) (V): 現值 '0.38 @100mA,25°C、0.28 @100mA,150°C、0.42 @200mA,25°C、0.34 @200mA,150°C、0.50 @500mA,25°C、0.45 @500mA,150°C' 漏抓了 0.47V @500mA,25°C 和 0.42V @500mA,150°C 的 MAX 值，應補充。",
+          "I_R(Reverse Current): 現值 '50uA @20V,25°C、5mA @20V,150°C' 漏抓了 6uA @20V,25°C 和 1.5mA @20V,150°C 的 Typ 值，應補充。"
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Minimum Operating Temperature(°C): 現值 '-65' 是 Tstg (Storage) 的值，應改為 Tj (Junction) 的值 '-55'。",
+          "Maximum Length (mm): 現值 '1.075' 是正確的。",
+          "Maximum Width (mm): 現值 '0.675' 是正確的。",
+          "Maximum Height (mm): 現值 '0.4' 是正確的。",
+          "V_F(Forward Voltage) (V): 現值 '0.38 @100mA,25°C、0.28 @100mA,150°C、0.42 @200mA,25°C、0.34 @200mA,150°C、0.50 @500mA,25°C、0.45 @500mA,150°C、0.47 @500mA,25°C、0.42 @500mA,150°C' 包含重複條目，應刪除重複的 '0.47 @500mA,25°C' 和 '0.42 @500mA,150°C'。",
+          "I_R(Reverse Current): 現值 '6uA @20V,25°C、50uA @20V,25°C、1.5mA @20V,150°C、5mA @20V,150°C' 包含重複條目，應刪除重複的 '50uA @20V,25°C' 和 '5mA @20V,150°C'。"
+        ]
+      }
+    ]
+  }
+}

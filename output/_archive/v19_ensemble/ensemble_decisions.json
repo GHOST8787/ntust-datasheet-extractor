@@ -1,0 +1,82 @@
+[
+  {
+    "part": "1N4148W",
+    "field": "Maximum Height (mm)",
+    "chosen": "v18"
+  },
+  {
+    "part": "BAS16",
+    "field": "Maximum Length (mm)",
+    "chosen": "v12"
+  },
+  {
+    "part": "BAS16",
+    "field": "I_R(Reverse Current) ",
+    "chosen": "v12"
+  },
+  {
+    "part": "BAT750",
+    "field": "I_R(Reverse Current) ",
+    "chosen": "v12"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Length (mm)",
+    "chosen": "neither"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Width (mm)",
+    "chosen": "neither"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Height (mm)",
+    "chosen": "neither"
+  },
+  {
+    "part": "BAV99W",
+    "field": "V_F(Forward Voltage) (V)",
+    "chosen": "v18"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "Maximum Length (mm)",
+    "chosen": "v12"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "Maximum Width (mm)",
+    "chosen": "v12"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "Maximum Height (mm)",
+    "chosen": "v12"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Length (mm)",
+    "chosen": "v12"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Width (mm)",
+    "chosen": "v12"
+  },
+  {
+    "part": "MSB30M",
+    "field": "V_F(Forward Voltage) (V)",
+    "chosen": "v12"
+  },
+  {
+    "part": "SBR05U20LPS",
+    "field": "V_F(Forward Voltage) (V)",
+    "chosen": "v12"
+  },
+  {
+    "part": "SBR05U20LPS",
+    "field": "I_R(Reverse Current) ",
+    "chosen": "neither"
+  }
+]

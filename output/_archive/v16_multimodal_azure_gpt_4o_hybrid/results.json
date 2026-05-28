@@ -1,0 +1,440 @@
+{
+  "1N4148W": {
+    "Part Number": "1N4148W",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 125,
+    "Maximum Length (mm)": 3.99,
+    "Maximum Width (mm)": 1.85,
+    "Maximum Height (mm)": 1.35,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.3,
+    "V_F(Forward Voltage) (V)": "0.715 @1mA、0.855 @10mA、1.00 @50mA、1.25 @150mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 75,
+    "I_R(Reverse Current) ": "2.5uA @75V、25nA @20V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 3.99 as per datasheet (B Max).",
+          "Maximum Width (mm) should be corrected to 1.85 as per datasheet (E Max).",
+          "Maximum Height (mm) should be corrected to 1.35 as per datasheet (A Max)."
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 3.99 as per datasheet (B Max).",
+          "Maximum Width (mm) should be corrected to 1.85 as per datasheet (E Max).",
+          "Maximum Height (mm) should be corrected to 1.35 as per datasheet (A Max)."
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 3.99 as per datasheet (B Max).",
+          "Maximum Width (mm) should be corrected to 1.85 as per datasheet (E Max).",
+          "Maximum Height (mm) should be corrected to 1.35 as per datasheet (A Max)."
+        ]
+      }
+    ]
+  },
+  "BAS16": {
+    "Part Number": "BAS16",
+    "Minimum Operating Temperature(°C)": -65,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 2.9,
+    "Maximum Width (mm)": 1.3,
+    "Maximum Height (mm)": 1.0,
+    "PIN Number": 3,
+    "I_O、I_F (A)": 0.215,
+    "V_F(Forward Voltage) (V)": "0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 100,
+    "I_R(Reverse Current) ": "30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V,150°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [
+          "I_R: '30nA @25V,25°C、0.5µA @80V,25°C、30µA @25V,150°C、50µA @80V,150°C' → '30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V,150°C'"
+        ],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 2.9 mm as per the datasheet (Package Outline, Fig. 7).",
+          "Maximum Width (mm) should be corrected to 1.3 mm as per the datasheet (Package Outline, Fig. 7).",
+          "Maximum Height (mm) should be corrected to 1.0 mm as per the datasheet (Package Outline, Fig. 7)."
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): Correct value is 2.9 mm (matches datasheet Table 3, Ordering Information).",
+          "Maximum Width (mm): Correct value is 1.3 mm (matches datasheet Table 3, Ordering Information).",
+          "Maximum Height (mm): Correct value is 1.0 mm (matches datasheet Table 3, Ordering Information)."
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 2.8 as per the datasheet (Package Outline: 2.8 mm to 3.0 mm).",
+          "Maximum Width (mm) should be corrected to 1.2 as per the datasheet (Package Outline: 1.2 mm to 1.4 mm).",
+          "Maximum Height (mm) should be corrected to 0.9 as per the datasheet (Package Outline: 0.9 mm to 1.1 mm)."
+        ]
+      }
+    ]
+  },
+  "BAS21H": {
+    "Part Number": "BAS21H",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.7,
+    "Maximum Width (mm)": 1.25,
+    "Maximum Height (mm)": 0.85,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.2,
+    "V_F(Forward Voltage) (V)": "1.0 @100mA、1.25 @200mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 250,
+    "I_R(Reverse Current) ": "0.1uA @200V、100uA @200V,150°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 1.7 (from 1.8) based on the datasheet's 'D Max' value.",
+          "Maximum Width (mm) should be corrected to 1.25 (from 1.35) based on the datasheet's 'E Max' value.",
+          "Maximum Height (mm) should be corrected to 0.85 (from 1.0) based on the datasheet's 'A Max' value."
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": true,
+        "corrections": []
+      }
+    ]
+  },
+  "BAT750": {
+    "Part Number": "BAT750",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 125,
+    "Maximum Length (mm)": 3.0,
+    "Maximum Width (mm)": 2.55,
+    "Maximum Height (mm)": 1.15,
+    "PIN Number": 3,
+    "I_O、I_F (A)": 0.75,
+    "V_F(Forward Voltage) (V)": "0.28 @50mA、0.31 @100mA、0.35 @250mA、0.42 @500mA、0.49 @750mA、0.54 @1000mA、0.65 @1500mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 40,
+    "I_R(Reverse Current) ": "100uA @30V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): The provided value is 3.0 mm, but the datasheet specifies a maximum of 3.00 mm for dimension D. No correction needed as it matches.",
+          "Maximum Width (mm): The provided value is 2.55 mm, but the datasheet specifies a maximum of 2.55 mm for dimension E. Matches",
+          "Maximum Height (mm): The provided value is 1.15 mm, but the datasheet specifies a maximum of 1.15 mm for dimension A. Matches"
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): The provided value is 3.0 mm, but the datasheet specifies a maximum of 3.00 mm for dimension D. No correction needed as the values match.",
+          "Maximum Width (mm): The provided value is 2.55 mm, but the datasheet specifies a maximum of 2.55 mm for dimension E. No correction needed as the values match.",
+          "Maximum Height (mm): The provided value is 1.15 mm, but the datasheet specifies a maximum of 1.15 mm for dimension A. No correction needed as the values match."
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): Correct value is 3.00 mm (matches datasheet D Max).",
+          "Maximum Width (mm): Correct value is 2.55 mm (matches datasheet E Max).",
+          "Maximum Height (mm): Correct value is 1.15 mm (matches datasheet A Max)."
+        ]
+      }
+    ]
+  },
+  "BAV99W": {
+    "Part Number": "BAV99W",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 2.4,
+    "Maximum Width (mm)": 1.3,
+    "Maximum Height (mm)": 0.9,
+    "PIN Number": 3,
+    "I_O、I_F (A)": 0.15,
+    "V_F(Forward Voltage) (V)": "0.715 @1mA、0.855 @10mA、1.0 @50mA、1.25 @150mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 100,
+    "I_R(Reverse Current) ": "30nA @25V、200nA @80V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): The provided value is 2.2 mm, but the datasheet specifies the maximum length as 2.5 mm. Update to 2.5 mm.",
+          "Maximum Width (mm): The provided value is 1.35 mm, but the datasheet specifies the maximum width as 1.3 mm. Update to 1.3 mm.",
+          "Maximum Height (mm): The provided value is 0.9 mm, but the datasheet specifies the maximum height as 0.95 mm. Update to 0.95 mm."
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 2.4 as per the datasheet (2.4 ± 0.1 mm).",
+          "Maximum Width (mm) should be corrected to 1.3 as per the datasheet (1.3 ± 0.1 mm).",
+          "Maximum Height (mm) should be corrected to 0.9 as per the datasheet (0.9 ± 0.1 mm)."
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 2.5 as per the datasheet (A Max = 2.5 mm).",
+          "Maximum Width (mm) should be corrected to 1.3 as per the datasheet (D Max = 1.3 mm).",
+          "Maximum Height (mm) should be corrected to 0.9 as per the datasheet (E Max = 0.9 mm)."
+        ]
+      }
+    ]
+  },
+  "CD4148WTP": {
+    "Part Number": "CD4148WTP",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.55,
+    "Maximum Width (mm)": 0.8,
+    "Maximum Height (mm)": 0.65,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.1,
+    "V_F(Forward Voltage) (V)": "1.0 @10mA、1.25 @100mA",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 75,
+    "I_R(Reverse Current) ": "0.025uA @20V、5uA @75V",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): Should be corrected to 1.65 (1.55 + 0.1 as per datasheet).",
+          "Maximum Width (mm): Should be corrected to 0.9 (0.8 + 0.1 as per datasheet).",
+          "Maximum Height (mm): Should be corrected to 0.75 (0.65 + 0.1 as per datasheet)."
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 1.55 as per datasheet (L: 1.55±0.1).",
+          "Maximum Width (mm) should be corrected to 0.8 as per datasheet (W: 0.80±0.1).",
+          "Maximum Height (mm) should be corrected to 0.65 as per datasheet (T: 0.65±0.1)."
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 1.65 (1.55 + 0.1 as per datasheet).",
+          "Maximum Width (mm) should be corrected to 0.9 (0.8 + 0.1 as per datasheet).",
+          "Maximum Height (mm) should be corrected to 0.75 (0.65 + 0.1 as per datasheet)."
+        ]
+      }
+    ]
+  },
+  "DFLS160": {
+    "Part Number": "DFLS160",
+    "Minimum Operating Temperature(°C)": -65,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.93,
+    "Maximum Width (mm)": 3.9,
+    "Maximum Height (mm)": 1.0,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 1.0,
+    "V_F(Forward Voltage) (V)": "0.50 @1.0A",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 60,
+    "I_R(Reverse Current) ": "0.1mA @60V,25°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): The provided value is 1.93 mm, but the datasheet specifies the maximum value for D as 1.93 mm. This is correct.",
+          "Maximum Width (mm): The provided value is 3.9 mm, but the datasheet specifies the maximum value for E as 3.90 mm. This is correct.",
+          "Maximum Height (mm): The provided value is 1.0 mm, but the datasheet specifies the maximum value for A as 1.00 mm. This is correct."
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): The provided value is 1.93 mm, but the datasheet specifies the maximum value for dimension D as 1.93 mm. This is correct.",
+          "Maximum Width (mm): The provided value is 3.9 mm, but the datasheet specifies the maximum value for dimension E as 3.90 mm. This is correct.",
+          "Maximum Height (mm): The provided value is 1.0 mm, but the datasheet specifies the maximum value for dimension A as 1.00 mm. This is correct."
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): Correct value is 1.93 mm (Max) as per datasheet, which matches the provided value. No correction needed.",
+          "Maximum Width (mm): Correct value is 3.90 mm (Max) as per datasheet, which matches the provided value. No correction needed.",
+          "Maximum Height (mm): Correct value is 1.00 mm (Max) as per datasheet, which matches the provided value. No correction needed."
+        ]
+      }
+    ]
+  },
+  "MBR15U150": {
+    "Part Number": "MBR15U150",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 6.6,
+    "Maximum Width (mm)": 5.5,
+    "Maximum Height (mm)": 4.1,
+    "PIN Number": 3,
+    "I_O、I_F (A)": 15,
+    "V_F(Forward Voltage) (V)": "0.84 @15A,25°C、0.73 @15A,125°C",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 150,
+    "I_R(Reverse Current) ": "10uA @150V,25°C、2mA @150V,125°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): Provided value is 6.6 mm, but datasheet specifies the maximum value for dimension C as 6.60 mm. No correction needed as it matches.",
+          "Maximum Width (mm): Provided value is 5.5 mm, but datasheet specifies the maximum value for dimension D as 5.50 mm. No correction needed as it matches.",
+          "Maximum Height (mm): Provided value is 4.1 mm, but datasheet specifies the maximum value for dimension A as 4.10 mm. No correction needed as it matches."
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 6.60 as per the datasheet (C Max).",
+          "Maximum Width (mm) should be corrected to 5.50 as per the datasheet (D Max).",
+          "Maximum Height (mm) should be corrected to 4.10 as per the datasheet (A Max)."
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 6.60 as per the datasheet (C Max).",
+          "Maximum Width (mm) should be corrected to 5.50 as per the datasheet (D Max).",
+          "Maximum Height (mm) should be corrected to 4.10 as per the datasheet (A Max)."
+        ]
+      }
+    ]
+  },
+  "MSB30M": {
+    "Part Number": "MSB30M",
+    "Minimum Operating Temperature(°C)": -55,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 6.7,
+    "Maximum Width (mm)": 7.4,
+    "Maximum Height (mm)": 1.5,
+    "PIN Number": 4,
+    "I_O、I_F (A)": 3.0,
+    "V_F(Forward Voltage) (V)": "1.1 @3.0A,25°C、1.02 @3.0A,125°C、0.88 @1.5A,125°C、0.8 @1.5A,25°C",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 1000,
+    "I_R(Reverse Current) ": "5uA @1000V,25°C、500uA @1000V,125°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): Provided value is 6.7 mm, but datasheet specifies D Max as 6.70 mm. This is correct.",
+          "Maximum Width (mm): Provided value is 7.4 mm, but datasheet specifies E Max as 7.40 mm. This is correct.",
+          "Maximum Height (mm): Provided value is 1.5 mm, but datasheet specifies A Max as 1.50 mm. This is correct."
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): Should be corrected to 6.7 mm as per datasheet (D Max = 6.70 mm).",
+          "Maximum Width (mm): Should be corrected to 7.4 mm as per datasheet (E Max = 7.40 mm).",
+          "Maximum Height (mm): Should be corrected to 1.5 mm as per datasheet (A Max = 1.50 mm)."
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm) should be corrected to 6.70 as per the datasheet (D Max).",
+          "Maximum Width (mm) should be corrected to 7.40 as per the datasheet (E Max).",
+          "Maximum Height (mm) should be corrected to 1.50 as per the datasheet (A Max)."
+        ]
+      }
+    ]
+  },
+  "SBR05U20LPS": {
+    "Part Number": "SBR05U20LPS",
+    "Minimum Operating Temperature(°C)": -65,
+    "Maximum Operating Temperature (°C)": 150,
+    "Maximum Length (mm)": 1.075,
+    "Maximum Width (mm)": 0.675,
+    "Maximum Height (mm)": 0.4,
+    "PIN Number": 2,
+    "I_O、I_F (A)": 0.5,
+    "V_F(Forward Voltage) (V)": "0.38 @0.1A,25°C、0.28 @0.1A,150°C、0.42 @0.2A,25°C、0.34 @0.2A,150°C、0.50 @0.5A,25°C、0.45 @0.5A,150°C",
+    "V_RRM(Peak Repetitive Reverse Voltage) (V)": 20,
+    "I_R(Reverse Current) ": "50uA @20V,25°C、5mA @20V,150°C",
+    "_v3_history": [
+      {
+        "round": 1,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): Correct value is 1.075 mm (matches D Max in datasheet).",
+          "Maximum Width (mm): Correct value is 0.675 mm (matches E Max in datasheet).",
+          "Maximum Height (mm): Correct value is 0.40 mm (matches A Max in datasheet)."
+        ]
+      },
+      {
+        "round": 2,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): The provided value is 1.075 mm, but the datasheet specifies the maximum value for D as 1.075 mm. This is correct.",
+          "Maximum Width (mm): The provided value is 0.675 mm, but the datasheet specifies the maximum value for E as 0.675 mm. This is correct.",
+          "Maximum Height (mm): The provided value is 0.4 mm, but the datasheet specifies the maximum value for A as 0.4 mm. This is correct."
+        ]
+      },
+      {
+        "round": 3,
+        "fixes": [],
+        "critic_passed": false,
+        "corrections": [
+          "Maximum Length (mm): Correct value is 1.075 mm (matches D Max in datasheet).",
+          "Maximum Width (mm): Correct value is 0.675 mm (matches E Max in datasheet).",
+          "Maximum Height (mm): Correct value is 0.40 mm (matches A Max in datasheet)."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+PDF Extractor: camelot
+LLM Backend:   ollama:qwen2.5:14b
+Overall: 67/110 = 60.9%
+
+Per-part:
+  1N4148W           8/ 11 =  72.7%
+  BAS16             8/ 11 =  72.7%
+  BAS21H            8/ 11 =  72.7%
+  BAT750            5/ 11 =  45.5%
+  BAV99W            5/ 11 =  45.5%
+  CD4148WTP         9/ 11 =  81.8%
+  DFLS160           8/ 11 =  72.7%
+  MBR15U150         3/ 11 =  27.3%
+  MSB30M            7/ 11 =  63.6%
+  SBR05U20LPS       6/ 11 =  54.5%

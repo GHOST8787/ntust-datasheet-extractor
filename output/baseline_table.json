@@ -1,0 +1,1127 @@
+[
+  {
+    "label": "V2 GPT-4o baseline",
+    "cell_id_train": "v2_pdfplumber_azure_gpt_4o",
+    "cell_id_holdout": "v2_pdfplumber_azure_gpt_4o",
+    "train": {
+      "correct": 86,
+      "total": 110,
+      "accuracy": 0.7818181818181819,
+      "per_field_errors": {
+        "Maximum Height (mm)": 5,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 7,
+        "Maximum Length (mm)": 4,
+        "V_F(Forward Voltage) (V)": 4,
+        "PIN Number": 1,
+        "I_R(Reverse Current) ": 2
+      }
+    },
+    "holdout": null,
+    "overfit_flag": "—"
+  },
+  {
+    "label": "V2 Mistral baseline",
+    "cell_id_train": "v2_pdfplumber_azure_mistral_medium_2505",
+    "cell_id_holdout": "v2_pdfplumber_azure_mistral_medium_2505",
+    "train": {
+      "correct": 86,
+      "total": 110,
+      "accuracy": 0.7818181818181819,
+      "per_field_errors": {
+        "Maximum Width (mm)": 6,
+        "Maximum Height (mm)": 4,
+        "I_R(Reverse Current) ": 4,
+        "Maximum Length (mm)": 4,
+        "V_F(Forward Voltage) (V)": 4,
+        "PIN Number": 1,
+        "I_O、I_F (A)": 1
+      }
+    },
+    "holdout": null,
+    "overfit_flag": "—"
+  },
+  {
+    "label": "V3 D GPT-4o dual×Con",
+    "cell_id_train": "v3_dual_agent_pdfplumber_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v3_dual_agent_pdfplumber_azure_gpt_4o_conservative",
+    "train": {
+      "correct": 85,
+      "total": 110,
+      "accuracy": 0.7727272727272727,
+      "per_field_errors": {
+        "Maximum Height (mm)": 5,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 7,
+        "Maximum Length (mm)": 5,
+        "V_F(Forward Voltage) (V)": 4,
+        "PIN Number": 1,
+        "I_R(Reverse Current) ": 2
+      }
+    },
+    "holdout": null,
+    "overfit_flag": "—"
+  },
+  {
+    "label": "V4 E GPT-4o MM×Con",
+    "cell_id_train": "v4_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v4_multimodal_azure_gpt_4o_conservative",
+    "train": {
+      "correct": 89,
+      "total": 110,
+      "accuracy": 0.8090909090909091,
+      "per_field_errors": {
+        "Maximum Height (mm)": 5,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 7,
+        "I_R(Reverse Current) ": 2,
+        "Maximum Length (mm)": 5,
+        "V_F(Forward Voltage) (V)": 1
+      }
+    },
+    "holdout": null,
+    "overfit_flag": "—"
+  },
+  {
+    "label": "V5 G strict schema",
+    "cell_id_train": "v5_strict_schema_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v5_strict_schema_multimodal_azure_gpt_4o_conservative",
+    "train": {
+      "correct": 85,
+      "total": 110,
+      "accuracy": 0.7727272727272727,
+      "per_field_errors": {
+        "Maximum Height (mm)": 6,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 7,
+        "I_R(Reverse Current) ": 2,
+        "Maximum Length (mm)": 5,
+        "V_F(Forward Voltage) (V)": 3,
+        "PIN Number": 1
+      }
+    },
+    "holdout": null,
+    "overfit_flag": "—"
+  },
+  {
+    "label": "V6 H CoT",
+    "cell_id_train": "v6_cot_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v6_cot_multimodal_azure_gpt_4o_conservative",
+    "train": {
+      "correct": 85,
+      "total": 110,
+      "accuracy": 0.7727272727272727,
+      "per_field_errors": {
+        "Maximum Height (mm)": 6,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 7,
+        "I_R(Reverse Current) ": 2,
+        "Maximum Length (mm)": 6,
+        "V_F(Forward Voltage) (V)": 3
+      }
+    },
+    "holdout": null,
+    "overfit_flag": "—"
+  },
+  {
+    "label": "V8",
+    "cell_id_train": "v8_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v8",
+    "train": {
+      "correct": 93,
+      "total": 110,
+      "accuracy": 0.8454545454545455,
+      "per_field_errors": {
+        "Maximum Height (mm)": 4,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "V_F(Forward Voltage) (V)": 1,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": {
+      "correct": 44,
+      "total": 55,
+      "accuracy": 0.8,
+      "per_field_errors": {
+        "Maximum Height (mm)": 1,
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 2,
+        "V_F(Forward Voltage) (V)": 2,
+        "I_R(Reverse Current) ": 2,
+        "I_O、I_F (A)": 1
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V9",
+    "cell_id_train": "v9_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v9",
+    "train": {
+      "correct": 94,
+      "total": 110,
+      "accuracy": 0.8545454545454545,
+      "per_field_errors": {
+        "Maximum Height (mm)": 4,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "I_R(Reverse Current) ": 1,
+        "Maximum Length (mm)": 4
+      }
+    },
+    "holdout": {
+      "correct": 49,
+      "total": 55,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Height (mm)": 1,
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 2
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V10",
+    "cell_id_train": "v10_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v10",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "Maximum Height (mm)": 3,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": {
+      "correct": 52,
+      "total": 55,
+      "accuracy": 0.9454545454545454,
+      "per_field_errors": {
+        "Maximum Height (mm)": 2,
+        "Maximum Length (mm)": 1
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V11",
+    "cell_id_train": "v11_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v11",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "Maximum Height (mm)": 3,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": {
+      "correct": 52,
+      "total": 55,
+      "accuracy": 0.9454545454545454,
+      "per_field_errors": {
+        "Maximum Length (mm)": 1,
+        "Maximum Width (mm)": 1,
+        "Maximum Height (mm)": 1
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V12",
+    "cell_id_train": "v12_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v12",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "Maximum Height (mm)": 3,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V13",
+    "cell_id_train": "v13_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v13",
+    "train": {
+      "correct": 92,
+      "total": 110,
+      "accuracy": 0.8363636363636363,
+      "per_field_errors": {
+        "Maximum Height (mm)": 4,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 6,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": {
+      "correct": 53,
+      "total": 55,
+      "accuracy": 0.9636363636363636,
+      "per_field_errors": {
+        "Maximum Length (mm)": 1,
+        "Maximum Width (mm)": 1
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V14 MM critic",
+    "cell_id_train": "v14_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v14",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "Maximum Height (mm)": 3,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V15 strict critic",
+    "cell_id_train": "v15_multimodal_azure_gpt_4o_strict",
+    "cell_id_holdout": "v15",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "Maximum Height (mm)": 5,
+        "Maximum Width (mm)": 5,
+        "Maximum Length (mm)": 4,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V16 hybrid critic",
+    "cell_id_train": "v16_multimodal_azure_gpt_4o_hybrid",
+    "cell_id_holdout": "v16",
+    "train": {
+      "correct": 92,
+      "total": 110,
+      "accuracy": 0.8363636363636363,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 7,
+        "Maximum Height (mm)": 5,
+        "Maximum Length (mm)": 5
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V17 temp=0.5",
+    "cell_id_train": "v17_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v17",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "Maximum Height (mm)": 3,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": {
+      "correct": 54,
+      "total": 55,
+      "accuracy": 0.9818181818181818,
+      "per_field_errors": {
+        "Maximum Length (mm)": 1
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V18 Llama-4-Maverick",
+    "cell_id_train": "v18_multimodal_azure_llama_4_maverick_conservative",
+    "cell_id_holdout": "v18",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "Maximum Height (mm)": 3,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 5,
+        "I_R(Reverse Current) ": 2,
+        "Maximum Length (mm)": 4
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V19 ensemble",
+    "cell_id_train": "v19_ensemble",
+    "cell_id_holdout": "v19_ensemble",
+    "train": {
+      "correct": 94,
+      "total": 110,
+      "accuracy": 0.8545454545454545,
+      "per_field_errors": {
+        "Maximum Height (mm)": 4,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": null,
+    "overfit_flag": "—"
+  },
+  {
+    "label": "V20 zoom=4.5 + precision",
+    "cell_id_train": "v20_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v20",
+    "train": {
+      "correct": 94,
+      "total": 110,
+      "accuracy": 0.8545454545454545,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "I_R(Reverse Current) ": 2,
+        "Maximum Length (mm)": 4,
+        "Maximum Height (mm)": 3
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V21 crop dimension redo",
+    "cell_id_train": "v21_crop_dimension_redo",
+    "cell_id_holdout": "v21_crop_dimension_redo",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "Maximum Width (mm)": 6,
+        "I_O、I_F (A)": 1,
+        "Maximum Length (mm)": 4,
+        "Maximum Height (mm)": 3,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V22 toc extractor",
+    "cell_id_train": "v22_multimodal_toc_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v22",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "V_F(Forward Voltage) (V)": 1,
+        "Maximum Height (mm)": 3
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V23 3-model majority",
+    "cell_id_train": "v23_majority_vote_3model",
+    "cell_id_holdout": "v23_majority_vote_3model",
+    "train": {
+      "correct": 96,
+      "total": 110,
+      "accuracy": 0.8727272727272727,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "Maximum Height (mm)": 3
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V24 8-model majority",
+    "cell_id_train": "v24_majority_vote_8model",
+    "cell_id_holdout": "v24_majority_vote_8model",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "Maximum Height (mm)": 3,
+        "I_R(Reverse Current) ": 1
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V25 cluster-aware vote",
+    "cell_id_train": "v25_cluster_aware_vote",
+    "cell_id_holdout": "v25_cluster_aware_vote",
+    "train": {
+      "correct": 95,
+      "total": 110,
+      "accuracy": 0.8636363636363636,
+      "per_field_errors": {
+        "Maximum Height (mm)": 3,
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 5,
+        "I_R(Reverse Current) ": 2,
+        "Maximum Length (mm)": 4
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V26 triaxis V18 override",
+    "cell_id_train": "v26_triaxis_v18_override",
+    "cell_id_holdout": "v26_triaxis_v18_override",
+    "train": {
+      "correct": 99,
+      "total": 110,
+      "accuracy": 0.9,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 5,
+        "Maximum Length (mm)": 3,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V27 narrow 4-way",
+    "cell_id_train": "v27_narrow_4way",
+    "cell_id_holdout": "v27_narrow_4way",
+    "train": {
+      "correct": 99,
+      "total": 110,
+      "accuracy": 0.9,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 5,
+        "Maximum Length (mm)": 3,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V28 narrow divergence",
+    "cell_id_train": "v28_narrow_divergence_override",
+    "cell_id_holdout": "v28_narrow_divergence_override",
+    "train": {
+      "correct": 98,
+      "total": 110,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Width (mm)": 5,
+        "I_O、I_F (A)": 1,
+        "Maximum Length (mm)": 3,
+        "Maximum Height (mm)": 3
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V29 V12+Tj+IO prompt",
+    "cell_id_train": "v29_multimodal_azure_gpt_4o_conservative",
+    "cell_id_holdout": "v29",
+    "train": {
+      "correct": 96,
+      "total": 110,
+      "accuracy": 0.8727272727272727,
+      "per_field_errors": {
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 4,
+        "V_F(Forward Voltage) (V)": 1,
+        "Maximum Height (mm)": 3
+      }
+    },
+    "holdout": {
+      "correct": 53,
+      "total": 55,
+      "accuracy": 0.9636363636363636,
+      "per_field_errors": {
+        "Maximum Length (mm)": 1,
+        "Maximum Width (mm)": 1
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V30 V29+V26 logic",
+    "cell_id_train": "v30_v29_with_v26_logic",
+    "cell_id_holdout": "v30_v29_with_v26_logic",
+    "train": {
+      "correct": 98,
+      "total": 110,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 5,
+        "Maximum Length (mm)": 3,
+        "V_F(Forward Voltage) (V)": 1,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 54,
+      "total": 55,
+      "accuracy": 0.9818181818181818,
+      "per_field_errors": {
+        "Maximum Length (mm)": 1
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V31 V26+V29 2-field ovr",
+    "cell_id_train": "v31_v26_with_v29_2field_override",
+    "cell_id_holdout": "v31_v26_with_v29_2field_override",
+    "train": {
+      "correct": 100,
+      "total": 110,
+      "accuracy": 0.9090909090909091,
+      "per_field_errors": {
+        "Maximum Width (mm)": 5,
+        "Maximum Length (mm)": 3,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V32 V31+Tj regex",
+    "cell_id_train": "v32_v31_tj_postprocess",
+    "cell_id_holdout": "v32_v31_tj_postprocess",
+    "train": {
+      "correct": 100,
+      "total": 110,
+      "accuracy": 0.9090909090909091,
+      "per_field_errors": {
+        "Maximum Width (mm)": 5,
+        "Maximum Length (mm)": 3,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V33 V31+Tj LLM query",
+    "cell_id_train": "v33_v31_tj_llm_query",
+    "cell_id_holdout": "v33_v31_tj_llm_query",
+    "train": {
+      "correct": 97,
+      "total": 110,
+      "accuracy": 0.8818181818181818,
+      "per_field_errors": {
+        "Minimum Operating Temperature(°C)": 3,
+        "Maximum Width (mm)": 5,
+        "Maximum Length (mm)": 3,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V34 V31+verify-all",
+    "cell_id_train": "v34_v31_with_verify",
+    "cell_id_holdout": "v34_v31_with_verify",
+    "train": {
+      "correct": 100,
+      "total": 110,
+      "accuracy": 0.9090909090909091,
+      "per_field_errors": {
+        "Maximum Width (mm)": 5,
+        "Maximum Length (mm)": 3,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V35 4-way w/ V29",
+    "cell_id_train": "v35_4way_vote_with_v29",
+    "cell_id_holdout": "v35_4way_vote_with_v29",
+    "train": {
+      "correct": 99,
+      "total": 110,
+      "accuracy": 0.9,
+      "per_field_errors": {
+        "I_O、I_F (A)": 1,
+        "Maximum Width (mm)": 5,
+        "Maximum Length (mm)": 3,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V36 V31+Llama critic",
+    "cell_id_train": "v36_v31_with_llama_critic",
+    "cell_id_holdout": "v36_v31_with_llama_critic",
+    "train": {
+      "correct": 99,
+      "total": 110,
+      "accuracy": 0.9,
+      "per_field_errors": {
+        "Maximum Width (mm)": 5,
+        "Maximum Height (mm)": 3,
+        "Maximum Length (mm)": 3
+      }
+    },
+    "holdout": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0,
+      "per_field_errors": {}
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V37 L=max(D,E) swap",
+    "cell_id_train": "v37_lw_max_swap",
+    "cell_id_holdout": "v37_lw_max_swap",
+    "train": {
+      "correct": 103,
+      "total": 110,
+      "accuracy": 0.9363636363636364,
+      "per_field_errors": {
+        "Maximum Width (mm)": 3,
+        "Maximum Length (mm)": 2,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 49,
+      "total": 55,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 3
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V38 W=H_E override",
+    "cell_id_train": "v38_w_he_override",
+    "cell_id_holdout": "v38_w_he_override",
+    "train": {
+      "correct": 100,
+      "total": 110,
+      "accuracy": 0.9090909090909091,
+      "per_field_errors": {
+        "Maximum Width (mm)": 6,
+        "Maximum Length (mm)": 2,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 49,
+      "total": 55,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 3
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V39 L_outer override",
+    "cell_id_train": "v39_l_outer_override",
+    "cell_id_holdout": "v39_l_outer_override",
+    "train": {
+      "correct": 104,
+      "total": 110,
+      "accuracy": 0.9454545454545454,
+      "per_field_errors": {
+        "Maximum Width (mm)": 3,
+        "Maximum Length (mm)": 1,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 49,
+      "total": 55,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 3
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V40 LW outer combined",
+    "cell_id_train": "v40_lw_outer_combined",
+    "cell_id_holdout": "v40_lw_outer_combined",
+    "train": {
+      "correct": 106,
+      "total": 110,
+      "accuracy": 0.9636363636363636,
+      "per_field_errors": {
+        "Maximum Width (mm)": 2,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 49,
+      "total": 55,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 3
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V41 Tj single + no Tamb",
+    "cell_id_train": "v41_tj_single_no_tamb",
+    "cell_id_holdout": "v41_tj_single_no_tamb",
+    "train": {
+      "correct": 106,
+      "total": 110,
+      "accuracy": 0.9636363636363636,
+      "per_field_errors": {
+        "Maximum Width (mm)": 2,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 49,
+      "total": 55,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 3
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V42 Tj regex Tamb",
+    "cell_id_train": "v42_tj_regex_tamb",
+    "cell_id_holdout": "v42_tj_regex_tamb",
+    "train": {
+      "correct": 103,
+      "total": 110,
+      "accuracy": 0.9363636363636364,
+      "per_field_errors": {
+        "Minimum Operating Temperature(°C)": 3,
+        "Maximum Width (mm)": 2,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 49,
+      "total": 55,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 3
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V43 H_E filtered",
+    "cell_id_train": "v43_he_ratio_filtered",
+    "cell_id_holdout": "v43_he_ratio_filtered",
+    "train": {
+      "correct": 106,
+      "total": 110,
+      "accuracy": 0.9636363636363636,
+      "per_field_errors": {
+        "Maximum Width (mm)": 2,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 49,
+      "total": 55,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 3
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V44 Tj+grep Tamb",
+    "cell_id_train": "v44_tj_single_grep_tamb",
+    "cell_id_holdout": "v44_tj_single_grep_tamb",
+    "train": {
+      "correct": 105,
+      "total": 110,
+      "accuracy": 0.9545454545454546,
+      "per_field_errors": {
+        "Minimum Operating Temperature(°C)": 1,
+        "Maximum Width (mm)": 2,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 49,
+      "total": 55,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 3
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V45 WH anomaly redo",
+    "cell_id_train": "v45_wh_anomaly_redo",
+    "cell_id_holdout": "v45_wh_anomaly_redo",
+    "train": {
+      "correct": 105,
+      "total": 110,
+      "accuracy": 0.9545454545454546,
+      "per_field_errors": {
+        "Minimum Operating Temperature(°C)": 1,
+        "Maximum Width (mm)": 2,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 49,
+      "total": 55,
+      "accuracy": 0.8909090909090909,
+      "per_field_errors": {
+        "Maximum Length (mm)": 3,
+        "Maximum Width (mm)": 3
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V46 Llama WH redo",
+    "cell_id_train": "v46_llama_wh_redo",
+    "cell_id_holdout": "v46_llama_wh_redo",
+    "train": {
+      "correct": 104,
+      "total": 110,
+      "accuracy": 0.9454545454545454,
+      "per_field_errors": {
+        "Minimum Operating Temperature(°C)": 1,
+        "Maximum Width (mm)": 2,
+        "Maximum Height (mm)": 2,
+        "Maximum Length (mm)": 1
+      }
+    },
+    "holdout": {
+      "correct": 51,
+      "total": 55,
+      "accuracy": 0.9272727272727272,
+      "per_field_errors": {
+        "Maximum Length (mm)": 2,
+        "Maximum Width (mm)": 2
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V47 Llama swap only",
+    "cell_id_train": "v47_llama_swap_only",
+    "cell_id_holdout": "v47_llama_swap_only",
+    "train": {
+      "correct": 105,
+      "total": 110,
+      "accuracy": 0.9545454545454546,
+      "per_field_errors": {
+        "Minimum Operating Temperature(°C)": 1,
+        "Maximum Width (mm)": 2,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 51,
+      "total": 55,
+      "accuracy": 0.9272727272727272,
+      "per_field_errors": {
+        "Maximum Length (mm)": 2,
+        "Maximum Width (mm)": 2
+      }
+    },
+    "overfit_flag": "OK"
+  },
+  {
+    "label": "V48 H_E multi-sample",
+    "cell_id_train": "v48_he_multi_sample",
+    "cell_id_holdout": "v48_he_multi_sample",
+    "train": {
+      "correct": 103,
+      "total": 110,
+      "accuracy": 0.9363636363636364,
+      "per_field_errors": {
+        "Maximum Width (mm)": 4,
+        "Minimum Operating Temperature(°C)": 1,
+        "Maximum Height (mm)": 2
+      }
+    },
+    "holdout": {
+      "correct": 51,
+      "total": 55,
+      "accuracy": 0.9272727272727272,
+      "per_field_errors": {
+        "Maximum Length (mm)": 2,
+        "Maximum Width (mm)": 2
+      }
+    },
+    "overfit_flag": "OK"
+  }
+]

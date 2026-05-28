@@ -1,0 +1,20 @@
+# 金鑰（.env.example 範本仍會入庫）
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 一次性 demo / 診斷暫存
+_demo_app.html
+_demo_cellcheck.py
+output/_demo_cellcheck.json
+
+# Playwright 暫存
+.playwright-mcp/
+
+# session 暫存
+.git_commit_msg.tmp

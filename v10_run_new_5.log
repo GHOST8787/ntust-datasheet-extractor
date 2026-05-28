@@ -1,0 +1,90 @@
+C:\Users\sunny\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.4.3)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[backend]      azure_foundry:gpt-4o
+[pdf extractor] multimodal
+[multimodal]    True
+[cell id]       v10_NEW_PDFS_test
+
+  - FFSH5065B
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+        [pdf] 12016 chars + 6 images (pages [1, 2, 3, 4, 5, 6])
+        [round 1] critic PASS
+  - FFSD1065B
+        [pdf] 12016 chars + 6 images (pages [1, 2, 3, 4, 5, 6])
+        [round 1] critic PASS
+  - VS3C20ET07T
+        [pdf] 12016 chars + 6 images (pages [1, 2, 3, 4, 5, 6])
+        [round 1] critic PASS
+  - VS3C12ET07S2L
+        [pdf] 12016 chars + 6 images (pages [1, 2, 3, 4, 5, 6])
+        [round 1] critic PASS
+  - ASA006V065F4
+MuPDF error: format error: No common ancestor in structure tree
+
+MuPDF error: format error: No common ancestor in structure tree
+
+MuPDF error: format error: No common ancestor in structure tree
+
+MuPDF error: format error: No common ancestor in structure tree
+
+MuPDF error: format error: No common ancestor in structure tree
+
+MuPDF error: format error: No common ancestor in structure tree
+
+MuPDF error: format error: No common ancestor in structure tree
+
+MuPDF error: format error: No common ancestor in structure tree
+
+MuPDF error: format error: No common ancestor in structure tree
+
+MuPDF error: format error: No common ancestor in structure tree
+
+        [pdf] 6661 chars + 3 images (pages [4, 5, 6])
+        [round 1] critic PASS
+
+Wrote: C:\Users\sunny\Desktop\2025_NTUST\20260508_期末作業\output\new_pdfs_extracted.json
+Total time: 100.7s
+
+================================================================================
+抽到的關鍵欄位（給人工驗證用）
+================================================================================
+
+[FFSH5065B]
+  Maximum Length (mm)                             : 20.82
+  Maximum Width (mm)                              : 15.87
+  Maximum Height (mm)                             : 5.2
+  PIN Number                                      : 2
+  I_O、I_F (A)                                     : 50
+  V_RRM(Peak Repetitive Reverse Voltage) (V)      : 650
+
+[FFSD1065B]
+  Maximum Length (mm)                             : 6.1
+  Maximum Width (mm)                              : 6.54
+  Maximum Height (mm)                             : 2.29
+  PIN Number                                      : 3
+  I_O、I_F (A)                                     : 10
+  V_RRM(Peak Repetitive Reverse Voltage) (V)      : 650
+
+[VS3C20ET07T]
+  Maximum Length (mm)                             : 14.02
+  Maximum Width (mm)                              : 10.51
+  Maximum Height (mm)                             : 4.65
+  PIN Number                                      : 2
+  I_O、I_F (A)                                     : 20
+  V_RRM(Peak Repetitive Reverse Voltage) (V)      : 650
+
+[VS3C12ET07S2L]
+  Maximum Length (mm)                             : 9.65
+  Maximum Width (mm)                              : 10.67
+  Maximum Height (mm)                             : 4.06
+  PIN Number                                      : 2
+  I_O、I_F (A)                                     : 12
+  V_RRM(Peak Repetitive Reverse Voltage) (V)      : 650
+
+[ASA006V065F4]
+  Maximum Length (mm)                             : 6.22
+  Maximum Width (mm)                              : 6.73
+  Maximum Height (mm)                             : 2.38
+  PIN Number                                      : 2
+  I_O、I_F (A)                                     : 19
+  V_RRM(Peak Repetitive Reverse Voltage) (V)      : 650

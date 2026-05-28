@@ -1,0 +1,110 @@
+[
+  {
+    "part": "1N4148W",
+    "field": "I_O、I_F (A)",
+    "expected": "0.15",
+    "extracted": "0.3"
+  },
+  {
+    "part": "BAS16",
+    "field": "Maximum Width (mm)",
+    "expected": "2.5",
+    "extracted": "1.4"
+  },
+  {
+    "part": "BAS16",
+    "field": "I_R(Reverse Current) ",
+    "expected": "30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V、150°C",
+    "extracted": "30nA @25V、0.5uA @80V、30uA @25V,150°C、50uA @80V,150°C"
+  },
+  {
+    "part": "BAS21H",
+    "field": "Maximum Length (mm)",
+    "expected": "2.7",
+    "extracted": "1.8"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Minimum Operating Temperature(°C)",
+    "expected": "150",
+    "extracted": "-55"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Width (mm)",
+    "expected": "2.2",
+    "extracted": "1.35"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Height (mm)",
+    "expected": "1",
+    "extracted": "1.1"
+  },
+  {
+    "part": "BAV99W",
+    "field": "V_RRM(Peak Repetitive Reverse Voltage) (V)",
+    "expected": "150",
+    "extracted": "100"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "Maximum Length (mm)",
+    "expected": "1.65",
+    "extracted": "1.55"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "Maximum Width (mm)",
+    "expected": "0.9",
+    "extracted": "0.8"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "Maximum Height (mm)",
+    "expected": "0.75",
+    "extracted": "0.65"
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Length (mm)",
+    "expected": "3.9",
+    "extracted": "1.93"
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Width (mm)",
+    "expected": "1.93",
+    "extracted": "3.9"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Width (mm)",
+    "expected": "4.1",
+    "extracted": "5.5"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Height (mm)",
+    "expected": "1.2",
+    "extracted": "4.1"
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Length (mm)",
+    "expected": "8.6",
+    "extracted": "6.7"
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Width (mm)",
+    "expected": "6.7",
+    "extracted": "7.4"
+  },
+  {
+    "part": "SBR05U20LPS",
+    "field": "I_R(Reverse Current) ",
+    "expected": "50uA @20V,25°C、5mA @20V,150°C",
+    "extracted": "6uA @20V,25°C、50uA @20V,150°C"
+  }
+]

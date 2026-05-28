@@ -1,0 +1,104 @@
+[
+  {
+    "part": "1N4148W",
+    "field": "I_O、I_F (A)",
+    "expected": "0.15",
+    "extracted": "0.3"
+  },
+  {
+    "part": "BAS16",
+    "field": "Maximum Width (mm)",
+    "expected": "2.5",
+    "extracted": "1.4"
+  },
+  {
+    "part": "BAS21H",
+    "field": "Maximum Length (mm)",
+    "expected": "2.7",
+    "extracted": "1.8"
+  },
+  {
+    "part": "BAT750",
+    "field": "V_F(Forward Voltage) (V)",
+    "expected": "0.49 @750mA",
+    "extracted": "0.235 @100mA、0.29 @250mA、0.34 @500mA、0.39 @750mA、0.42 @1000mA、0.475 @1500mA"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Minimum Operating Temperature(°C)",
+    "expected": "150",
+    "extracted": "-55"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Width (mm)",
+    "expected": "2.2",
+    "extracted": "1.35"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Height (mm)",
+    "expected": "1",
+    "extracted": "1.1"
+  },
+  {
+    "part": "BAV99W",
+    "field": "V_RRM(Peak Repetitive Reverse Voltage) (V)",
+    "expected": "150",
+    "extracted": "100"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "Maximum Length (mm)",
+    "expected": "1.65",
+    "extracted": "1.55"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "Maximum Width (mm)",
+    "expected": "0.9",
+    "extracted": "0.8"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "Maximum Height (mm)",
+    "expected": "0.75",
+    "extracted": "0.65"
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Length (mm)",
+    "expected": "3.9",
+    "extracted": "1.93"
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Width (mm)",
+    "expected": "1.93",
+    "extracted": "3.9"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Width (mm)",
+    "expected": "4.1",
+    "extracted": "5.5"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Height (mm)",
+    "expected": "1.2",
+    "extracted": "4.1"
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Length (mm)",
+    "expected": "8.6",
+    "extracted": "6.7"
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Width (mm)",
+    "expected": "6.7",
+    "extracted": "7.4"
+  }
+]

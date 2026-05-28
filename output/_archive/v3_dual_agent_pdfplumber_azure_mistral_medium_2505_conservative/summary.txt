@@ -1,0 +1,15 @@
+PDF Extractor: pdfplumber
+LLM Backend:   azure_foundry:mistral-medium-2505
+Overall: 87/110 = 79.1%
+
+Per-part:
+  1N4148W          10/ 11 =  90.9%
+  BAS16             8/ 11 =  72.7%
+  BAS21H            8/ 11 =  72.7%
+  BAT750            9/ 11 =  81.8%
+  BAV99W            6/ 11 =  54.5%
+  CD4148WTP        11/ 11 = 100.0%
+  DFLS160           9/ 11 =  81.8%
+  MBR15U150         7/ 11 =  63.6%
+  MSB30M            9/ 11 =  81.8%
+  SBR05U20LPS      10/ 11 =  90.9%

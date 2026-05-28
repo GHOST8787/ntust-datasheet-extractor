@@ -1,0 +1,104 @@
+[
+  {
+    "part": "1N4148W",
+    "field": "Maximum Height (mm)",
+    "expected": "1.35",
+    "extracted": "1.62"
+  },
+  {
+    "part": "BAS16",
+    "field": "Maximum Width (mm)",
+    "expected": "2.5",
+    "extracted": "1.4"
+  },
+  {
+    "part": "BAS21H",
+    "field": "Maximum Length (mm)",
+    "expected": "2.7",
+    "extracted": "1.8"
+  },
+  {
+    "part": "BAS21H",
+    "field": "Maximum Height (mm)",
+    "expected": "1",
+    "extracted": "0.95"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Minimum Operating Temperature(°C)",
+    "expected": "150",
+    "extracted": "-55"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Length (mm)",
+    "expected": "2.2",
+    "extracted": "2.6"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Width (mm)",
+    "expected": "2.2",
+    "extracted": "1.4"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Height (mm)",
+    "expected": "1",
+    "extracted": "1.2"
+  },
+  {
+    "part": "BAV99W",
+    "field": "V_RRM(Peak Repetitive Reverse Voltage) (V)",
+    "expected": "150",
+    "extracted": "100"
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Length (mm)",
+    "expected": "3.9",
+    "extracted": "1.93"
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Width (mm)",
+    "expected": "1.93",
+    "extracted": "3.0"
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Height (mm)",
+    "expected": "1",
+    "extracted": "0.25"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Width (mm)",
+    "expected": "4.1",
+    "extracted": "5.5"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Height (mm)",
+    "expected": "1.2",
+    "extracted": "4.1"
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Length (mm)",
+    "expected": "8.6",
+    "extracted": "6.7"
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Width (mm)",
+    "expected": "6.7",
+    "extracted": "7.4"
+  },
+  {
+    "part": "SBR05U20LPS",
+    "field": "I_R(Reverse Current) ",
+    "expected": "50uA @20V,25°C、5mA @20V,150°C",
+    "extracted": "6uA @20V,25°C、50uA @20V,150°C"
+  }
+]

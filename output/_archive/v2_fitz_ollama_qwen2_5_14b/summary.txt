@@ -1,0 +1,15 @@
+PDF Extractor: fitz
+LLM Backend:   ollama:qwen2.5:14b
+Overall: 70/110 = 63.6%
+
+Per-part:
+  1N4148W           7/ 11 =  63.6%
+  BAS16             7/ 11 =  63.6%
+  BAS21H            8/ 11 =  72.7%
+  BAT750            7/ 11 =  63.6%
+  BAV99W            6/ 11 =  54.5%
+  CD4148WTP        10/ 11 =  90.9%
+  DFLS160           7/ 11 =  63.6%
+  MBR15U150         3/ 11 =  27.3%
+  MSB30M            7/ 11 =  63.6%
+  SBR05U20LPS       8/ 11 =  72.7%

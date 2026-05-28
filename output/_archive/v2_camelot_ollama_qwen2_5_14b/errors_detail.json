@@ -1,0 +1,260 @@
+[
+  {
+    "part": "1N4148W",
+    "field": "Maximum Length (mm)",
+    "expected": "3.86",
+    "extracted": "3.6"
+  },
+  {
+    "part": "1N4148W",
+    "field": "Maximum Height (mm)",
+    "expected": "1.35",
+    "extracted": ""
+  },
+  {
+    "part": "1N4148W",
+    "field": "I_O、I_F (A)",
+    "expected": "0.15",
+    "extracted": "0.3"
+  },
+  {
+    "part": "BAS16",
+    "field": "Maximum Width (mm)",
+    "expected": "2.5",
+    "extracted": "1.3"
+  },
+  {
+    "part": "BAS16",
+    "field": "Maximum Height (mm)",
+    "expected": "1.1",
+    "extracted": "1"
+  },
+  {
+    "part": "BAS16",
+    "field": "I_R(Reverse Current) ",
+    "expected": "30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V、150°C",
+    "extracted": "30nA @25V、0.5uA @80V、30uA @25V,150°C、50uA @80V,150°C"
+  },
+  {
+    "part": "BAS21H",
+    "field": "Maximum Length (mm)",
+    "expected": "2.7",
+    "extracted": ""
+  },
+  {
+    "part": "BAS21H",
+    "field": "Maximum Width (mm)",
+    "expected": "1.35",
+    "extracted": ""
+  },
+  {
+    "part": "BAS21H",
+    "field": "Maximum Height (mm)",
+    "expected": "1",
+    "extracted": ""
+  },
+  {
+    "part": "BAT750",
+    "field": "Maximum Length (mm)",
+    "expected": "3",
+    "extracted": "1.3"
+  },
+  {
+    "part": "BAT750",
+    "field": "Maximum Width (mm)",
+    "expected": "2.55",
+    "extracted": "0.95"
+  },
+  {
+    "part": "BAT750",
+    "field": "Maximum Height (mm)",
+    "expected": "1.15",
+    "extracted": ""
+  },
+  {
+    "part": "BAT750",
+    "field": "PIN Number",
+    "expected": "3",
+    "extracted": "2"
+  },
+  {
+    "part": "BAT750",
+    "field": "V_F(Forward Voltage) (V)",
+    "expected": "0.49 @750mA",
+    "extracted": "0.34 @500mA、0.39 @750mA、0.42 @1000mA"
+  },
+  {
+    "part": "BAT750",
+    "field": "I_R(Reverse Current) ",
+    "expected": "100uA @30V",
+    "extracted": "50uA @30V"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Minimum Operating Temperature(°C)",
+    "expected": "150",
+    "extracted": "-55"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Length (mm)",
+    "expected": "2.2",
+    "extracted": ""
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Width (mm)",
+    "expected": "2.2",
+    "extracted": ""
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Height (mm)",
+    "expected": "1",
+    "extracted": ""
+  },
+  {
+    "part": "BAV99W",
+    "field": "V_F(Forward Voltage) (V)",
+    "expected": "1.25 @150mA",
+    "extracted": "0.715 @1mA、0.855 @10mA、1.00 @50mA"
+  },
+  {
+    "part": "BAV99W",
+    "field": "V_RRM(Peak Repetitive Reverse Voltage) (V)",
+    "expected": "150",
+    "extracted": "100"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "Maximum Height (mm)",
+    "expected": "0.75",
+    "extracted": "0.65"
+  },
+  {
+    "part": "CD4148WTP",
+    "field": "PIN Number",
+    "expected": "2",
+    "extracted": ""
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Width (mm)",
+    "expected": "1.93",
+    "extracted": "1.25"
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Height (mm)",
+    "expected": "1",
+    "extracted": "0.5"
+  },
+  {
+    "part": "DFLS160",
+    "field": "I_R(Reverse Current) ",
+    "expected": "0.1mA @60V,25°C",
+    "extracted": "0.1uA @60V"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Minimum Operating Temperature(°C)",
+    "expected": "-55",
+    "extracted": "-40"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Length (mm)",
+    "expected": "6.6",
+    "extracted": "4.5"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Width (mm)",
+    "expected": "4.1",
+    "extracted": "1.9"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Height (mm)",
+    "expected": "1.2",
+    "extracted": ""
+  },
+  {
+    "part": "MBR15U150",
+    "field": "PIN Number",
+    "expected": "3",
+    "extracted": "2"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "I_O、I_F (A)",
+    "expected": "15",
+    "extracted": "1.5"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "V_F(Forward Voltage) (V)",
+    "expected": "0.84 @15A,25°C、0.73 @15A,125°C",
+    "extracted": "0.715 @1mA"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "I_R(Reverse Current) ",
+    "expected": "10uA @150V,25°C、2mA @150V,125°C",
+    "extracted": "2uA @4.0V、null"
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Length (mm)",
+    "expected": "8.6",
+    "extracted": "2.85"
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Width (mm)",
+    "expected": "6.7",
+    "extracted": ""
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Height (mm)",
+    "expected": "1.5",
+    "extracted": ""
+  },
+  {
+    "part": "MSB30M",
+    "field": "V_F(Forward Voltage) (V)",
+    "expected": "1.1 @3A,25°C",
+    "extracted": "1.1 @3000mA"
+  },
+  {
+    "part": "SBR05U20LPS",
+    "field": "Maximum Length (mm)",
+    "expected": "1.075",
+    "extracted": ""
+  },
+  {
+    "part": "SBR05U20LPS",
+    "field": "Maximum Width (mm)",
+    "expected": "0.675",
+    "extracted": ""
+  },
+  {
+    "part": "SBR05U20LPS",
+    "field": "Maximum Height (mm)",
+    "expected": "0.4",
+    "extracted": ""
+  },
+  {
+    "part": "SBR05U20LPS",
+    "field": "V_F(Forward Voltage) (V)",
+    "expected": "0.5 @0.5A,25°C",
+    "extracted": "0.31 @0.2A、0.34 @0.2A、0.47 @0.5A"
+  },
+  {
+    "part": "SBR05U20LPS",
+    "field": "I_R(Reverse Current) ",
+    "expected": "50uA @20V,25°C、5mA @20V,150°C",
+    "extracted": "6uA @20V、1.5uA @20V,150°C"
+  }
+]

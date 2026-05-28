@@ -1,0 +1,66 @@
+C:\Users\sunny\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.4.3)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[backend]      azure_foundry:mistral-medium-2505
+[pdf extractor] pdfplumber
+[critic mode]   conservative
+[1/4] 載入標準答案
+      共 10 顆元件
+[2/4] PDF 抽取 + LLM 推理
+      - 1N4148W
+        [round 1] critic PASS
+      - BAS16
+        [round 1] critic FAIL, 2 corrections
+          · V_F(Forward Voltage) 的單位應為 V 而非 mV，應修正為 "0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA"
+          · I_O、I_F (A) 的值應為 0.215 A，但 datasheet 中顯示為 215 mA，應修正為 0.215
+        [round 2] critic FAIL, 2 corrections
+          · V_F(Forward Voltage) 的單位應為 V 而非 mV，應修正為 "0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA"
+          · I_O、I_F (A) 的值應為 0.215 A，但 datasheet 中顯示為 215 mA，應修正為 0.215
+        [round 3] critic FAIL, 2 corrections
+          · V_F(Forward Voltage) 的單位應為 V 而非 mV，應修正為 "0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA"
+          · I_O、I_F (A) 的值應為 0.215 A，但 datasheet 中顯示為 215 mA，應修正為 0.215
+        [exhausted] 3 rounds done, using last answer
+      - BAS21H
+        [round 1] critic FAIL, 2 corrections
+          · V_F(Forward Voltage) (V) 應為 "1.0 @100mA、1.25 @200mA"，因 datasheet Page 2 明確標示 Forward Voltage 為 1000mV (1.0V) @100mA 和 12
+          · I_R(Reverse Current) 應為 "0.1uA @200V、100uA @200V,150°C"，因 datasheet Page 2 明確標示 Reverse Voltage Leakage Current 為 0.1μA 
+        [round 2] critic FAIL, 2 corrections
+          · V_F(Forward Voltage) (V) 的單位應為 mV 而非 V，應改為 "1000 @100mA、1250 @200mA"
+          · I_R(Reverse Current) 的單位應為 µA 而非 uA，應改為 "0.1µA @200V、100µA @200V,150°C"
+        [round 3] critic FAIL, 2 corrections
+          · V_F(Forward Voltage) (V) 的單位應為 mV 而非 V，應修正為 "1000 @100mA、1250 @200mA"
+          · I_R(Reverse Current) 的單位應為 µA 而非 uA，應修正為 "0.1µA @200V、100µA @200V,150°C"
+        [exhausted] 3 rounds done, using last answer
+      - BAT750
+        [round 1 validator] V_F: '0.34 @500mA, 0.39 @750mA, 0.42 @1000mA, 0.475 @1500mA' → '0.34 @500mA、0.39 @750mA、0.42 @1000mA、0.475 @1500mA'
+        [round 1] critic PASS
+      - BAV99W
+        [round 1] critic PASS
+      - CD4148WTP
+        [round 1] critic PASS
+      - DFLS160
+        [round 1] critic PASS
+      - MBR15U150
+        [round 1] critic PASS
+      - MSB30M
+        [round 1] critic PASS
+      - SBR05U20LPS
+        [round 1] critic PASS
+[3/4] 評估比對
+[4/4] 寫出 Excel
+      → C:\Users\sunny\Desktop\2025_NTUST\20260508_期末作業\output\results_v3.xlsx
+[5/5] 自動歸檔
+      → C:\Users\sunny\Desktop\2025_NTUST\20260508_期末作業\output\_archive\v3_dual_agent_pdfplumber_azure_mistral_medium_2505_conservative
+
+=== pdfplumber × azure_foundry:mistral-medium-2505 整體準確率：87/110 = 79.1% ===
+
+各元件：
+  1N4148W          10/ 11 =  90.9%
+  BAS16             8/ 11 =  72.7%
+  BAS21H            8/ 11 =  72.7%
+  BAT750            9/ 11 =  81.8%
+  BAV99W            6/ 11 =  54.5%
+  CD4148WTP        11/ 11 = 100.0%
+  DFLS160           9/ 11 =  81.8%
+  MBR15U150         7/ 11 =  63.6%
+  MSB30M            9/ 11 =  81.8%
+  SBR05U20LPS      10/ 11 =  90.9%

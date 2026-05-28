@@ -1,0 +1,182 @@
+[
+  {
+    "part": "1N4148W",
+    "field": "Maximum Height (mm)",
+    "expected": "1.35",
+    "extracted": "1.9"
+  },
+  {
+    "part": "1N4148W",
+    "field": "I_O、I_F (A)",
+    "expected": "0.15",
+    "extracted": "0.3"
+  },
+  {
+    "part": "BAS16",
+    "field": "Maximum Width (mm)",
+    "expected": "2.5",
+    "extracted": "1.4"
+  },
+  {
+    "part": "BAS16",
+    "field": "Maximum Height (mm)",
+    "expected": "1.1",
+    "extracted": "0.48"
+  },
+  {
+    "part": "BAS16",
+    "field": "I_R(Reverse Current) ",
+    "expected": "30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V、150°C",
+    "extracted": "30n( @25V、0.5uA @80V、30uA @25V,150°C、50uA @80V,150°C"
+  },
+  {
+    "part": "BAS21H",
+    "field": "Maximum Length (mm)",
+    "expected": "2.7",
+    "extracted": "1.7"
+  },
+  {
+    "part": "BAS21H",
+    "field": "Maximum Width (mm)",
+    "expected": "1.35",
+    "extracted": "1.25"
+  },
+  {
+    "part": "BAS21H",
+    "field": "Maximum Height (mm)",
+    "expected": "1",
+    "extracted": "0.85"
+  },
+  {
+    "part": "BAT750",
+    "field": "V_F(Forward Voltage) (V)",
+    "expected": "0.49 @750mA",
+    "extracted": "0.34 @500mA、0.39 @750mA、0.42 @1000mA、0.475 @1500mA"
+  },
+  {
+    "part": "BAT750",
+    "field": "I_R(Reverse Current) ",
+    "expected": "100uA @30V",
+    "extracted": "50uA @30V"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Minimum Operating Temperature(°C)",
+    "expected": "150",
+    "extracted": "-55"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Width (mm)",
+    "expected": "2.2",
+    "extracted": "1.35"
+  },
+  {
+    "part": "BAV99W",
+    "field": "Maximum Height (mm)",
+    "expected": "1",
+    "extracted": "0.9"
+  },
+  {
+    "part": "BAV99W",
+    "field": "V_RRM(Peak Repetitive Reverse Voltage) (V)",
+    "expected": "150",
+    "extracted": "100"
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Length (mm)",
+    "expected": "3.9",
+    "extracted": "1.93"
+  },
+  {
+    "part": "DFLS160",
+    "field": "Maximum Width (mm)",
+    "expected": "1.93",
+    "extracted": "3.9"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Minimum Operating Temperature(°C)",
+    "expected": "-55",
+    "extracted": "-40"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Operating Temperature (°C)",
+    "expected": "150",
+    "extracted": "175"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Length (mm)",
+    "expected": "6.6",
+    "extracted": "5.5"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Width (mm)",
+    "expected": "4.1",
+    "extracted": "1.9"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "Maximum Height (mm)",
+    "expected": "1.2",
+    "extracted": "4.1"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "PIN Number",
+    "expected": "3",
+    "extracted": "2"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "I_O、I_F (A)",
+    "expected": "15",
+    "extracted": "1.0"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "V_F(Forward Voltage) (V)",
+    "expected": "0.84 @15A,25°C、0.73 @15A,125°C",
+    "extracted": "0.53 @15A、0.715 @1A、0.89 @3A"
+  },
+  {
+    "part": "MBR15U150",
+    "field": "I_R(Reverse Current) ",
+    "expected": "10uA @150V,25°C、2mA @150V,125°C",
+    "extracted": "500uA @150V、0.5uA @125V,25°C"
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Length (mm)",
+    "expected": "8.6",
+    "extracted": "6.7"
+  },
+  {
+    "part": "MSB30M",
+    "field": "Maximum Width (mm)",
+    "expected": "6.7",
+    "extracted": "8.6"
+  },
+  {
+    "part": "MSB30M",
+    "field": "V_F(Forward Voltage) (V)",
+    "expected": "1.1 @3A,25°C",
+    "extracted": "1.02 @1.5A、0.80 @1.5A,125°C、1.1 @3A、0.88 @3A,125°C"
+  },
+  {
+    "part": "MSB30M",
+    "field": "I_R(Reverse Current) ",
+    "expected": "5uA @1000V,25°C、500uA @1000V,125°C",
+    "extracted": "0.31uA @1000V、5uA @1000V,125°C"
+  },
+  {
+    "part": "SBR05U20LPS",
+    "field": "V_F(Forward Voltage) (V)",
+    "expected": "0.5 @0.5A,25°C",
+    "extracted": "0.38 @0.1mA、0.28 @0.1mA、0.42 @0.2mA、0.34 @0.2mA、0.5 @0.5mA、0.45 @0.5mA"
+  }
+]

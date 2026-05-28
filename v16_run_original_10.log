@@ -1,0 +1,175 @@
+C:\Users\sunny\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.4.3)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[backend]      azure_foundry:gpt-4o
+[pdf extractor] multimodal
+[critic mode]   hybrid
+[multimodal]    True
+[strict schema] False
+[chain-of-thought] False
+[cell id]       v16_multimodal_azure_gpt_4o_hybrid
+[1/4] 載入標準答案
+      共 10 顆元件
+[2/4] PDF 抽取 + LLM 推理
+      - 1N4148W
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+        [pdf] 5840 chars + 4 images (pages [1, 2, 3, 4])
+        [round 1] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 3.99 as per datasheet (B Max).
+          · Maximum Width (mm) should be corrected to 1.85 as per datasheet (E Max).
+          · Maximum Height (mm) should be corrected to 1.35 as per datasheet (A Max).
+        [round 2] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 3.99 as per datasheet (B Max).
+          · Maximum Width (mm) should be corrected to 1.85 as per datasheet (E Max).
+          · Maximum Height (mm) should be corrected to 1.35 as per datasheet (A Max).
+        [round 3] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 3.99 as per datasheet (B Max).
+          · Maximum Width (mm) should be corrected to 1.85 as per datasheet (E Max).
+          · Maximum Height (mm) should be corrected to 1.35 as per datasheet (A Max).
+        [exhausted] 3 rounds done, using last answer
+      - BAS16
+        [pdf] 12016 chars + 8 images (pages [1, 2, 3, 4, 5, 6, 8, 9])
+        [round 1 validator] I_R: '30nA @25V,25°C、0.5µA @80V,25°C、30µA @25V,150°C、50µA @80V,150°C' → '30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V,150°C'
+        [round 1] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 2.9 mm as per the datasheet (Package Outline, Fig. 7).
+          · Maximum Width (mm) should be corrected to 1.3 mm as per the datasheet (Package Outline, Fig. 7).
+          · Maximum Height (mm) should be corrected to 1.0 mm as per the datasheet (Package Outline, Fig. 7).
+        [round 2] critic FAIL, 3 corrections
+          · Maximum Length (mm): Correct value is 2.9 mm (matches datasheet Table 3, Ordering Information).
+          · Maximum Width (mm): Correct value is 1.3 mm (matches datasheet Table 3, Ordering Information).
+          · Maximum Height (mm): Correct value is 1.0 mm (matches datasheet Table 3, Ordering Information).
+        [round 3] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 2.8 as per the datasheet (Package Outline: 2.8 mm to 3.0 mm).
+          · Maximum Width (mm) should be corrected to 1.2 as per the datasheet (Package Outline: 1.2 mm to 1.4 mm).
+          · Maximum Height (mm) should be corrected to 0.9 as per the datasheet (Package Outline: 0.9 mm to 1.1 mm).
+        [exhausted] 3 rounds done, using last answer
+      - BAS21H
+        [pdf] 12016 chars + 5 images (pages [1, 2, 3, 4, 5])
+        [round 1] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 1.7 (from 1.8) based on the datasheet's 'D Max' value.
+          · Maximum Width (mm) should be corrected to 1.25 (from 1.35) based on the datasheet's 'E Max' value.
+          · Maximum Height (mm) should be corrected to 0.85 (from 1.0) based on the datasheet's 'A Max' value.
+        [round 2] critic PASS
+      - BAT750
+        [pdf] 12016 chars + 5 images (pages [1, 2, 3, 4, 5])
+        [round 1] critic FAIL, 3 corrections
+          · Maximum Length (mm): The provided value is 3.0 mm, but the datasheet specifies a maximum of 3.00 mm for dimension D. No 
+          · Maximum Width (mm): The provided value is 2.55 mm, but the datasheet specifies a maximum of 2.55 mm for dimension E. Mat
+          · Maximum Height (mm): The provided value is 1.15 mm, but the datasheet specifies a maximum of 1.15 mm for dimension A. Ma
+        [round 2] critic FAIL, 3 corrections
+          · Maximum Length (mm): The provided value is 3.0 mm, but the datasheet specifies a maximum of 3.00 mm for dimension D. No 
+          · Maximum Width (mm): The provided value is 2.55 mm, but the datasheet specifies a maximum of 2.55 mm for dimension E. No 
+          · Maximum Height (mm): The provided value is 1.15 mm, but the datasheet specifies a maximum of 1.15 mm for dimension A. No
+        [round 3] critic FAIL, 3 corrections
+          · Maximum Length (mm): Correct value is 3.00 mm (matches datasheet D Max).
+          · Maximum Width (mm): Correct value is 2.55 mm (matches datasheet E Max).
+          · Maximum Height (mm): Correct value is 1.15 mm (matches datasheet A Max).
+        [exhausted] 3 rounds done, using last answer
+      - BAV99W
+        [pdf] 12016 chars + 5 images (pages [2, 3, 4, 5, 6])
+        [round 1] critic FAIL, 3 corrections
+          · Maximum Length (mm): The provided value is 2.2 mm, but the datasheet specifies the maximum length as 2.5 mm. Update to 2
+          · Maximum Width (mm): The provided value is 1.35 mm, but the datasheet specifies the maximum width as 1.3 mm. Update to 1.
+          · Maximum Height (mm): The provided value is 0.9 mm, but the datasheet specifies the maximum height as 0.95 mm. Update to 
+        [round 2] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 2.4 as per the datasheet (2.4 ± 0.1 mm).
+          · Maximum Width (mm) should be corrected to 1.3 as per the datasheet (1.3 ± 0.1 mm).
+          · Maximum Height (mm) should be corrected to 0.9 as per the datasheet (0.9 ± 0.1 mm).
+        [round 3] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 2.5 as per the datasheet (A Max = 2.5 mm).
+          · Maximum Width (mm) should be corrected to 1.3 as per the datasheet (D Max = 1.3 mm).
+          · Maximum Height (mm) should be corrected to 0.9 as per the datasheet (E Max = 0.9 mm).
+        [exhausted] 3 rounds done, using last answer
+      - CD4148WTP
+        [pdf] 8820 chars + 6 images (pages [1, 2, 3, 4, 5, 6])
+        [round 1] critic FAIL, 3 corrections
+          · Maximum Length (mm): Should be corrected to 1.65 (1.55 + 0.1 as per datasheet).
+          · Maximum Width (mm): Should be corrected to 0.9 (0.8 + 0.1 as per datasheet).
+          · Maximum Height (mm): Should be corrected to 0.75 (0.65 + 0.1 as per datasheet).
+        [round 2] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 1.55 as per datasheet (L: 1.55±0.1).
+          · Maximum Width (mm) should be corrected to 0.8 as per datasheet (W: 0.80±0.1).
+          · Maximum Height (mm) should be corrected to 0.65 as per datasheet (T: 0.65±0.1).
+        [round 3] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 1.65 (1.55 + 0.1 as per datasheet).
+          · Maximum Width (mm) should be corrected to 0.9 (0.8 + 0.1 as per datasheet).
+          · Maximum Height (mm) should be corrected to 0.75 (0.65 + 0.1 as per datasheet).
+        [exhausted] 3 rounds done, using last answer
+      - DFLS160
+        [pdf] 12016 chars + 5 images (pages [1, 2, 3, 4, 5])
+        [round 1] critic FAIL, 3 corrections
+          · Maximum Length (mm): The provided value is 1.93 mm, but the datasheet specifies the maximum value for D as 1.93 mm. This
+          · Maximum Width (mm): The provided value is 3.9 mm, but the datasheet specifies the maximum value for E as 3.90 mm. This i
+          · Maximum Height (mm): The provided value is 1.0 mm, but the datasheet specifies the maximum value for A as 1.00 mm. This 
+        [round 2] critic FAIL, 3 corrections
+          · Maximum Length (mm): The provided value is 1.93 mm, but the datasheet specifies the maximum value for dimension D as 1.9
+          · Maximum Width (mm): The provided value is 3.9 mm, but the datasheet specifies the maximum value for dimension E as 3.90 
+          · Maximum Height (mm): The provided value is 1.0 mm, but the datasheet specifies the maximum value for dimension A as 1.00
+        [round 3] critic FAIL, 3 corrections
+          · Maximum Length (mm): Correct value is 1.93 mm (Max) as per datasheet, which matches the provided value. No correction ne
+          · Maximum Width (mm): Correct value is 3.90 mm (Max) as per datasheet, which matches the provided value. No correction nee
+          · Maximum Height (mm): Correct value is 1.00 mm (Max) as per datasheet, which matches the provided value. No correction ne
+        [exhausted] 3 rounds done, using last answer
+      - MBR15U150
+        [pdf] 7913 chars + 2 images (pages [1, 2])
+        [round 1] critic FAIL, 3 corrections
+          · Maximum Length (mm): Provided value is 6.6 mm, but datasheet specifies the maximum value for dimension C as 6.60 mm. No 
+          · Maximum Width (mm): Provided value is 5.5 mm, but datasheet specifies the maximum value for dimension D as 5.50 mm. No c
+          · Maximum Height (mm): Provided value is 4.1 mm, but datasheet specifies the maximum value for dimension A as 4.10 mm. No 
+        [round 2] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 6.60 as per the datasheet (C Max).
+          · Maximum Width (mm) should be corrected to 5.50 as per the datasheet (D Max).
+          · Maximum Height (mm) should be corrected to 4.10 as per the datasheet (A Max).
+        [round 3] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 6.60 as per the datasheet (C Max).
+          · Maximum Width (mm) should be corrected to 5.50 as per the datasheet (D Max).
+          · Maximum Height (mm) should be corrected to 4.10 as per the datasheet (A Max).
+        [exhausted] 3 rounds done, using last answer
+      - MSB30M
+        [pdf] 12016 chars + 5 images (pages [1, 2, 3, 4, 5])
+        [round 1] critic FAIL, 3 corrections
+          · Maximum Length (mm): Provided value is 6.7 mm, but datasheet specifies D Max as 6.70 mm. This is correct.
+          · Maximum Width (mm): Provided value is 7.4 mm, but datasheet specifies E Max as 7.40 mm. This is correct.
+          · Maximum Height (mm): Provided value is 1.5 mm, but datasheet specifies A Max as 1.50 mm. This is correct.
+        [round 2] critic FAIL, 3 corrections
+          · Maximum Length (mm): Should be corrected to 6.7 mm as per datasheet (D Max = 6.70 mm).
+          · Maximum Width (mm): Should be corrected to 7.4 mm as per datasheet (E Max = 7.40 mm).
+          · Maximum Height (mm): Should be corrected to 1.5 mm as per datasheet (A Max = 1.50 mm).
+        [round 3] critic FAIL, 3 corrections
+          · Maximum Length (mm) should be corrected to 6.70 as per the datasheet (D Max).
+          · Maximum Width (mm) should be corrected to 7.40 as per the datasheet (E Max).
+          · Maximum Height (mm) should be corrected to 1.50 as per the datasheet (A Max).
+        [exhausted] 3 rounds done, using last answer
+      - SBR05U20LPS
+        [pdf] 12016 chars + 5 images (pages [1, 2, 3, 4, 5])
+        [round 1] critic FAIL, 3 corrections
+          · Maximum Length (mm): Correct value is 1.075 mm (matches D Max in datasheet).
+          · Maximum Width (mm): Correct value is 0.675 mm (matches E Max in datasheet).
+          · Maximum Height (mm): Correct value is 0.40 mm (matches A Max in datasheet).
+        [round 2] critic FAIL, 3 corrections
+          · Maximum Length (mm): The provided value is 1.075 mm, but the datasheet specifies the maximum value for D as 1.075 mm. Th
+          · Maximum Width (mm): The provided value is 0.675 mm, but the datasheet specifies the maximum value for E as 0.675 mm. Thi
+          · Maximum Height (mm): The provided value is 0.4 mm, but the datasheet specifies the maximum value for A as 0.4 mm. This i
+        [round 3] critic FAIL, 3 corrections
+          · Maximum Length (mm): Correct value is 1.075 mm (matches D Max in datasheet).
+          · Maximum Width (mm): Correct value is 0.675 mm (matches E Max in datasheet).
+          · Maximum Height (mm): Correct value is 0.40 mm (matches A Max in datasheet).
+        [exhausted] 3 rounds done, using last answer
+[3/4] 評估比對
+[4/4] 寫出 Excel
+      → C:\Users\sunny\Desktop\2025_NTUST\20260508_期末作業\output\results_v4.xlsx
+[5/5] 自動歸檔
+      → C:\Users\sunny\Desktop\2025_NTUST\20260508_期末作業\output\_archive\v16_multimodal_azure_gpt_4o_hybrid
+
+=== multimodal × azure_foundry:gpt-4o 整體準確率：90/110 = 81.8% ===
+
+各元件：
+  1N4148W          10/ 11 =  90.9%
+  BAS16             9/ 11 =  81.8%
+  BAS21H            8/ 11 =  72.7%
+  BAT750           11/ 11 = 100.0%
+  BAV99W            6/ 11 =  54.5%
+  CD4148WTP         8/ 11 =  72.7%
+  DFLS160           9/ 11 =  81.8%
+  MBR15U150         9/ 11 =  81.8%
+  MSB30M            9/ 11 =  81.8%
+  SBR05U20LPS      11/ 11 = 100.0%

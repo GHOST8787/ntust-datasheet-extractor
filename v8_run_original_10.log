@@ -1,0 +1,63 @@
+C:\Users\sunny\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.4.3)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[backend]      azure_foundry:gpt-4o
+[pdf extractor] multimodal
+[critic mode]   conservative
+[multimodal]    True
+[strict schema] False
+[chain-of-thought] False
+[cell id]       v8_multimodal_azure_gpt_4o_conservative
+[1/4] 載入標準答案
+      共 10 顆元件
+[2/4] PDF 抽取 + LLM 推理
+      - 1N4148W
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+        [pdf] 5840 chars + 4 images (pages [1, 2, 3, 4])
+        [round 1] critic PASS
+      - BAS16
+        [pdf] 12016 chars + 8 images (pages [1, 2, 3, 4, 5, 6, 8, 9])
+        [round 1 validator] I_R: '30nA @25V,25°C、0.5µA @80V,25°C、30µA @25V,150°C、50µA @80V,150°C' → '30nA @25V,25°C、0.5uA @80V,25°C、30uA @25V,150°C、50uA @80V,150°C'
+        [round 1] critic PASS
+      - BAS21H
+        [pdf] 12016 chars + 5 images (pages [1, 2, 3, 4, 5])
+        [round 1] critic PASS
+      - BAT750
+        [pdf] 12016 chars + 5 images (pages [1, 2, 3, 4, 5])
+        [round 1] critic PASS
+      - BAV99W
+        [pdf] 12016 chars + 5 images (pages [2, 3, 4, 5, 6])
+        [round 1] critic PASS
+      - CD4148WTP
+        [pdf] 8820 chars + 6 images (pages [1, 2, 3, 4, 5, 6])
+        [round 1] critic PASS
+      - DFLS160
+        [pdf] 12016 chars + 5 images (pages [1, 2, 3, 4, 5])
+        [round 1] critic PASS
+      - MBR15U150
+        [pdf] 7913 chars + 2 images (pages [1, 2])
+        [round 1] critic PASS
+      - MSB30M
+        [pdf] 12016 chars + 5 images (pages [1, 2, 3, 4, 5])
+        [round 1] critic PASS
+      - SBR05U20LPS
+        [pdf] 12016 chars + 5 images (pages [1, 2, 3, 4, 5])
+        [round 1] critic PASS
+[3/4] 評估比對
+[4/4] 寫出 Excel
+      → C:\Users\sunny\Desktop\2025_NTUST\20260508_期末作業\output\results_v4.xlsx
+[5/5] 自動歸檔
+      → C:\Users\sunny\Desktop\2025_NTUST\20260508_期末作業\output\_archive\v8_multimodal_azure_gpt_4o_conservative
+
+=== multimodal × azure_foundry:gpt-4o 整體準確率：91/110 = 82.7% ===
+
+各元件：
+  1N4148W           9/ 11 =  81.8%
+  BAS16            10/ 11 =  90.9%
+  BAS21H           10/ 11 =  90.9%
+  BAT750           10/ 11 =  90.9%
+  BAV99W            7/ 11 =  63.6%
+  CD4148WTP         8/ 11 =  72.7%
+  DFLS160           9/ 11 =  81.8%
+  MBR15U150         9/ 11 =  81.8%
+  MSB30M            9/ 11 =  81.8%
+  SBR05U20LPS      10/ 11 =  90.9%

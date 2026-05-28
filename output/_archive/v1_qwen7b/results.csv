@@ -1,0 +1,11 @@
+﻿Part Number,Minimum Operating Temperature(°C),Maximum Operating Temperature (°C),Maximum Length (mm),Maximum Width (mm),Maximum Height (mm),PIN Number,I_O、I_F (A),V_F(Forward Voltage) (V),V_RRM(Peak Repetitive Reverse Voltage) (V),I_R(Reverse Current) 
+1N4148W,-55,125,3.99,1.62,1.8,2,0.15,0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA,75,2.5uA @75V、25nA @20V
+BAS16,,150,2.9,1.3,1,3,0.215,0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA,100,"30nA @25V,30µA @150V、50µA @150V"
+BAS21H,-55,150,1.7,1.25,0.85,2,0.2,1000 @100 mAdc、1250 @200 mAdc,,"0.1 uA @200 Vdc、100 uA @200 Vdc, TJ = 150°C"
+BAT750,-55,125,3.0,1.4,1.15,3,0.75,340 @500mA、390 @750mA、420 @1000mA、475 @1500mA,40,50uA @30V、175nA @25V
+BAV99W,-55,150,,,,3,0.15,0.715 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA,,30nA @25V、200uA @80V
+CD4148WTP,-55,150,1.55,0.8,0.65,2,0.1,1 @10mA、1.25 @100mA,75,0.025uA @20V、5uA @75V
+DFLS160,-65,150,,,,4,1.0,0.50 @1.0A,60,"0.1 mA @60V,25°C"
+TO-277,-55,150,4.1,1.9,6.6,3,0.177,0.7 @1mA、0.855 @10mA、1 @50mA、1.25 @150mA,,10uA @75V
+MSB30M,-55,150,6.7,8.6,1.4,4,3,"0.88 @IF = 3.0A, TA = +25°C、1.02 @IF = 3.0A, TA = +125°C",1000,"500μA @VR = 1,000V, TA = +125°C"
+SBR05U20LPS,-65,150,,,,2,0.5,"0.31 @0.2A, TJ = +150°C、0.47 @0.5A, TJ = +25°C、0.42 @0.5A, TJ = +150°C",20,"1.5 mA @VR = 20V, TJ = +150°C"

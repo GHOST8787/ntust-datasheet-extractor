@@ -1,0 +1,15 @@
+PDF Extractor: pdfplumber
+LLM Backend:   azure_foundry:Llama-4-Maverick-17B-128E-Instruct-FP8
+Overall: 80/110 = 72.7%
+
+Per-part:
+  1N4148W           9/ 11 =  81.8%
+  BAS16             8/ 11 =  72.7%
+  BAS21H            8/ 11 =  72.7%
+  BAT750            9/ 11 =  81.8%
+  BAV99W            7/ 11 =  63.6%
+  CD4148WTP        11/ 11 = 100.0%
+  DFLS160           9/ 11 =  81.8%
+  MBR15U150         2/ 11 =  18.2%
+  MSB30M            7/ 11 =  63.6%
+  SBR05U20LPS      10/ 11 =  90.9%
