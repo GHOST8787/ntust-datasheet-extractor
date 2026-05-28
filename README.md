@@ -63,20 +63,29 @@ webapp 兩個區塊：
 20260508_期末作業/
 ├── app.py              任務四 webapp（Streamlit）
 ├── REPORT.md           成果報告（四任務 + 數據佐證）
+├── README.md
 ├── main.py             主流程：抽取 + 雙 agent 迭代 + 比對
 ├── prompts.py          集中管理 prompt 與 11 欄位規則
 ├── pdf_extractor.py    PDF 解析抽象（pdfplumber/fitz/camelot/multimodal 可切換）
 ├── llm_backend.py      LLM 後端抽象（Ollama/Azure GPT-4o/Llama/Mistral 可切換）
 ├── validators.py       後處理：單位修正、sanity check
+├── qa_critic.py        critic agent（雙 agent 迭代用）
+├── output_schema.py    strict JSON schema 定義
+├── iteration_logger.py 迭代過程記錄
+├── crop_extractor.py   封裝尺寸圖面裁切
 ├── config.py           路徑、欄位、比對閾值
 ├── evaluate_all.py     統一評估所有版本準確率
-├── run_v*.py           各版本迭代腳本（V4 ~ V48）
+├── evaluate_new_5.py   holdout 5 份標答與評估
 ├── .env.example        環境變數範本
 ├── AZURE_SETUP.md      Azure AI Foundry 部署教學
 ├── requirements.txt
 ├── data/specbook.xlsx  標答
 ├── datasheets/         10 份 PDF
-└── output/_archive/    各版本完整歸檔（可回溯、可重現）
+├── output/_archive/    各版本完整歸檔（可回溯、可重現）
+├── experiments/        各版本迭代腳本（run_v4 ~ run_v48）+ holdout 抽取
+├── scripts/            一次性診斷與分析工具
+├── logs/               各版本執行 log
+└── docs/               課程簡報與補充文件
 ```
 
 ## 提取欄位（共 11 項）
