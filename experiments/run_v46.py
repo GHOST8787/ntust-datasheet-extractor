@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- Llama WH 針對 MBR15U150
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V46 — V44 + Llama vision for WH-anomaly parts
 
 對 V44 baseline W/L > 0.7 AND H/L > 0.4 的 parts (= MBR15U150 type) 跑 Llama 看圖。

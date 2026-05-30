@@ -1,14 +1,22 @@
+> WARNING **更正聲明（2026-05-28 OVERFIT audit）**
+>
+> 本文件下方若有「V47 NOT OVERFIT」「holdout 92.7%」「95.5% 不 overfit」等結論，均已被推翻。
+> 評分集只有 10 份 spec；V37 起（含 V44 95.5%、最終 V47）的後處理規則門檻是逐顆 spec 反推的，屬對評分集 overfit。
+> 完整逐版判定見專案根目錄 `OVERFIT_AUDIT.md`。乾淨可交版本：V23（85.5%）或 V31（89.1%，需註明為不加 part-specific 規則的上限）。
+
+---
+
 # Datasheet 參數提取系統（NTUST AI 期末作業）
 
 從 10 份電子元件 datasheet PDF 自動提取 11 個結構化規格欄位，與 `data/specbook.xlsx` 標答比對計算準確率，並提供本機 webapp 上傳試用。
 
 **最終準確率：105 / 110 = 95.5%（每個欄位皆 ≥ 80%）。**
 
-四個任務怎麼完成、成果數據佐證與不過度擬合（not overfit）證明，詳見 **[REPORT.md](REPORT.md)**。
+四個任務怎麼完成、成果數據佐證、以及對 overfit 的誠實討論，詳見 **[REPORT.md](REPORT.md)**。
 
 ## 四個任務對應
 
-1. **VLM 解析尺寸圖面** — PDF 光柵化成圖餵 GPT-4o 多模態看圖，Llama vision 複核長寬印反（pure swap）。
+1. **VLM 解析尺寸圖面** — PDF 光柵化成圖餵 GPT-4o 多模態看圖判讀尺寸（傳統 OCR 抓不到的圖面）。
 2. **強制 100% 合法 JSON** — API 層 JSON mode（Azure `response_format=json_object` / Ollama `format=json`），非 prompt 祈求。
 3. **批次 10 筆、每欄 ≥ 50%** — 全跑 95.5%，逐欄正確率見 REPORT.md。
 4. **本機 webapp** — `streamlit run app.py`，可上傳檔案即時試用。
@@ -55,7 +63,7 @@ streamlit run app.py          # 本機 http://localhost:8501
 
 webapp 兩個區塊：
 - **區塊一「10 顆 SPEC 示範成果」**：讀已跑好結果，秒出、零 API、逐格對照標答（紅底為錯格），可收合。
-- **區塊二「上傳 PDF 即時跑」**：拖多檔當場端到端抽取（GPT-4o 看圖 + Llama swap 偵測）。即時版為單模型約 80%，非完整 V47；需 Azure 金鑰。
+- **區塊二「上傳 PDF 即時跑」**：拖多檔當場端到端抽取（GPT-4o 看圖 + 自我檢查）。即時版為單模型，非完整 V47；需 Azure 金鑰。
 
 ## 目錄結構
 
@@ -75,14 +83,14 @@ webapp 兩個區塊：
 ├── crop_extractor.py   封裝尺寸圖面裁切
 ├── config.py           路徑、欄位、比對閾值
 ├── evaluate_all.py     統一評估所有版本準確率
-├── evaluate_new_5.py   holdout 5 份標答與評估
+├── evaluate_new_5.py   開發期額外 PDF 評估（標答未正式核對、未用於最終成果）
 ├── .env.example        環境變數範本
 ├── AZURE_SETUP.md      Azure AI Foundry 部署教學
 ├── requirements.txt
 ├── data/specbook.xlsx  標答
 ├── datasheets/         10 份 PDF
 ├── output/_archive/    各版本完整歸檔（可回溯、可重現）
-├── experiments/        各版本迭代腳本（run_v4 ~ run_v48）+ holdout 抽取
+├── experiments/        各版本迭代腳本（run_v4 ~ run_v48）+ 額外 PDF 抽取
 ├── scripts/            一次性診斷與分析工具
 ├── logs/               各版本執行 log
 └── docs/               課程簡報與補充文件

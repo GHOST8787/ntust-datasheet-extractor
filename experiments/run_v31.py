@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- 只 override 2 欄；override 範圍是依這 10 份哪幾格被修而選的（界線版，專案自稱 generic 天花板）
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V31 — V26 baseline + V29 limited override on 2 fields only
 
 V26 (88.2%) 是 best baseline。V29 prompt 改 Tj fallback + I_O 優先，但意外傷害 holdout

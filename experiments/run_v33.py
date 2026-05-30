@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- 建在 V31，Tj LLM query 後處理
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V33 — V31 + LLM Tj structure query post-process
 
 對每 part 跑 1 LLM call，問 datasheet 的 Tj 是 single value 還是 range。

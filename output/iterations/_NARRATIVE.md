@@ -1,3 +1,11 @@
+> WARNING **更正聲明（2026-05-28 OVERFIT audit）**
+>
+> 本文件下方若有「V47 NOT OVERFIT」「holdout 92.7%」「95.5% 不 overfit」等結論，均已被推翻。
+> 評分集只有 10 份 spec；V37 起（含 V44 95.5%、最終 V47）的後處理規則門檻是逐顆 spec 反推的，屬對評分集 overfit。
+> 完整逐版判定見專案根目錄 `OVERFIT_AUDIT.md`。乾淨可交版本：V23（85.5%）或 V31（89.1%，需註明為不加 part-specific 規則的上限）。
+
+---
+
 # 整體歷程綜述 — NTUST 期末 PDF spec 抽取 V12 → V47
 
 > 給寫文章用的 narrative + key insights + data points

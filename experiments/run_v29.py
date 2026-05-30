@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- prompt 反推 BAV99W=150、1N4148W=0.15 等特定答案
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V29 — V12 baseline + 強化 Tj fallback + I_O 優先 prompt 規則
 
 V29 改動（純 prompt engineering，generic 不依賴 train set 內容）：

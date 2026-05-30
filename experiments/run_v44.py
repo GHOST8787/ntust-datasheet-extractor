@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- Tj grep Tamb 精準區分 BAV99W vs BAS16（95.5% 來源）
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V44 — V40 + Tj single + grep 'Tamb' literal
 
 regex grep PDF text 找 "Tamb" 或 "Ambient Temperature" literal symbol。

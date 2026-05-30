@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- L outer override 為救 BAS21H
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V39 — V37 + L_outer override
 
 對 V37 baseline 每 part 跑 LLM query：找 L 的「lead-to-lead total」變體 (L1, H_D, E1 等)。

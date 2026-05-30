@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- 建在 V31，verify critic
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V34 — V31 baseline + per-part LLM "verify each field" critic
 
 對每 part 跑 1 個 LLM call: 「給你 V31 抽的 11 個欄位 + 看圖 + PDF text，

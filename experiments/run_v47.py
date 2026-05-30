@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- part-specific 門檻 + 對 AA 5 份其中一顆（VS3C12ET07S2L）調；final，最嚴重
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V47 — V44 + Llama swap detection only
 
 對 W/L > 0.7 AND H/L > 0.4 的 part 跑 Llama vision，

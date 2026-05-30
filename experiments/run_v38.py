@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- W H_E override，part-specific
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V38 — V37 + LLM 第二輪抽 W from H_E for SMD diode
 
 對每 part 額外問 LLM:「這 part 的 H_E (含 lead lead-to-lead) Max 是多少？」

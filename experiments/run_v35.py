@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- 4-way vote 含 V29
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V35 — 4-way vote (V12 + V18 + V22 + V29) with V26 triaxis V18 override
 
 加 V29 進 V23 majority pool。V29 prompt 改了 Tj fallback 跟 I_O 優先。

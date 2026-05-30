@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- H_E rule for BAV99W，ratio 1.4~1.8 反推排除 1N4148W
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V43 — V40 + 精準 H_E rule for BAV99W (ratio 1.4~1.8 排除 1N4148W 過大)
 
 V38-style narrow H_E query + V40-style ratio condition:

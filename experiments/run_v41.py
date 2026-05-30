@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- Tj rule 為救 BAV99W、避開 BAS16
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V41 — V40 + Tj single + no-Tamb rule
 
 對每 part LLM query: Tj 是 single value 嗎 + datasheet 有 Tamb range 嗎

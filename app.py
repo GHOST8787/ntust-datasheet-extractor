@@ -11,8 +11,10 @@
 import os
 import sys
 import json
+import time
 import base64
 import tempfile
+from datetime import datetime
 from pathlib import Path
 
 import streamlit as st
@@ -225,7 +227,8 @@ def query_llama(backend, pn, pdf_path):
 # 區塊二：上傳 PDF 即時端到端抽取
 # =====================================================================
 def run_live(pdf_path, pn):
-    """端到端跑 V4 E 單模型抽取，再做 Llama swap 偵測。回 (answer, swap_info)。"""
+    """端到端跑 V4 E 單模型抽取 + Llama swap 偵測，並用 IterationLogger 產生過程紀錄。
+    回 (answer, swap_info, log_md, log_jsonl, result_json)。"""
     # V4 E 配置（與 extract_new_pdfs.py 一致）
     os.environ["BACKEND"] = "azure_gpt4o"
     os.environ["CRITIC_PROMPT_MODE"] = "conservative"
@@ -238,11 +241,24 @@ def run_live(pdf_path, pn):
     from llm_backend import get_backend
     from pdf_extractor import get_pdf_extractor
     from main import run_dual_agent_loop
+    from iteration_logger import IterationLogger
+
+    # 每次跑用時間戳當 cell_id，過程寫到 output/webapp_runs/<cell_id>/<part>.{jsonl,md}
+    cell_id = f"webapp_{datetime.now():%Y%m%d_%H%M%S}"
+    log_dir = config.OUTPUT_DIR / "webapp_runs" / cell_id
+    logger = IterationLogger(config.OUTPUT_DIR / "webapp_runs", cell_id)
+    logger.start_part(pn)
 
     gpt = get_backend("azure_gpt4o")
     extractor = get_pdf_extractor("multimodal")
-    text, images_b64, _ = extractor.extract_with_images(pdf_path)
-    answer, _ = run_dual_agent_loop(gpt, pn, text, images_b64=images_b64, multimodal=True)
+    t0 = time.time()
+    text, images_b64, pages = extractor.extract_with_images(pdf_path)
+    logger.log_pdf_extract(extractor.name, len(text), len(images_b64),
+                           int((time.time() - t0) * 1000), pages)
+
+    # run_dual_agent_loop 內部會記 extraction / validator / critic / final
+    answer, _ = run_dual_agent_loop(gpt, pn, text, logger=logger,
+                                    images_b64=images_b64, multimodal=True)
 
     swap_info = None
     if needs_redo(answer):
@@ -255,7 +271,24 @@ def run_live(pdf_path, pn):
                          "llama": info, "after": (answer[L_KEY], answer[W_KEY])}
         else:
             swap_info = {"triggered": False, "llama": info}
-    return answer, swap_info
+
+    logger.close()
+
+    # 讀回過程紀錄（md 人類可讀 / jsonl 機器事件）
+    md_path = log_dir / f"{pn}.md"
+    jsonl_path = log_dir / f"{pn}.jsonl"
+    log_md = md_path.read_text(encoding="utf-8") if md_path.exists() else "(無過程紀錄)"
+    log_jsonl = jsonl_path.read_text(encoding="utf-8") if jsonl_path.exists() else ""
+
+    # 結果 JSON（11 欄 + swap 偵測 metadata）
+    result_json = json.dumps({
+        "part_number": pn,
+        "extracted_at": datetime.now().isoformat(),
+        "fields": {f: answer.get(f) for f in FIELDS},
+        "swap_detection": swap_info,
+    }, ensure_ascii=False, indent=2)
+
+    return answer, swap_info, log_md, log_jsonl, result_json
 
 
 def render_live_result(pn, answer, swap_info):

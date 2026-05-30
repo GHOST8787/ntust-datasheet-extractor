@@ -1,3 +1,8 @@
+# ============================================================
+# !!! OVERFIT -- 建在 V31，Llama critic
+# 標記 2026-05-28 OVERFIT audit：評分集只有 10 份 spec，此版對其有 overfit 疑慮，
+# 分數不代表泛化能力。完整逐版判定見專案根目錄 OVERFIT_AUDIT.md。
+# ============================================================
 """V36 — V31 baseline + Llama-4-Maverick second-opinion critic
 
 Llama vision arch ≠ GPT-4o (V31 主要靠 GPT-4o)，可能對某些 GPT-4o blind spot 有 different perspective。
