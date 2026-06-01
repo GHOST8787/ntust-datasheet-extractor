@@ -18,3 +18,11 @@ output/_demo_cellcheck.json
 
 # session 暫存
 .git_commit_msg.tmp
+_verify_tmp.py
+
+# 舊打包（12MB，非繳交範圍）
+*.zip
+
+# webapp / 實驗執行階段輸出
+output/webapp_runs/
+output/*_marked.png
