@@ -8,9 +8,9 @@
 
 # Datasheet 參數提取系統　成果報告
 
-NTUST AI 課程　黃姿晴　2026 / 05 / 30
+NTUST AI 課程　黃姿晴　2026 / 06 / 04
 
-完整程式碼、版本演進歷程與可重現歸檔（GitHub）：https://github.com/GHOST8787/ntust-datasheet-extractor　（本繳交壓縮檔為精簡核心版，完整版本歸檔請見 GitHub）。
+本作業提供兩種繳交包：**DEMO 精簡版**（核心程式 + 兩份報告 + webapp，供快速試跑）與**完整紀錄版**（含全部版本歸檔與迭代腳本，供查核可重現性）。完整程式碼與版本演進歷程亦公開於 GitHub：https://github.com/GHOST8787/ntust-datasheet-extractor
 
 本專案處理作業提供的 10 份電子元件 datasheet PDF 與標準答案 `specbook.xlsx` 中 11 個結構化規格欄位的對應。其中 **Part Number 為作業給定的輸入**（檔案與型號的對應在執行前已知），實際需從 PDF 自動抽取的是**其餘 10 個欄位**；系統將抽取結果與 `specbook.xlsx` 逐格比對計算準確率，並提供本機 webapp 上傳試用。
 
@@ -77,19 +77,19 @@ NTUST AI 課程　黃姿晴　2026 / 05 / 30
 
 整合版有錯的 5 顆元件，僅列出未對上的格（其餘欄皆對）：
 
-| 元件 | 欄位 | 抽取值 | 標準答案 | 錯格數 |
-| --- | --- | --- | --- | --- |
-| 1N4148W | Height | 1.65 | 1.35 | 2 |
-| 1N4148W | I_O/I_F | 0.3 | 0.15 |  |
-| BAS21H | Length | 1.8 | 2.7 | 2 |
-| BAS21H | Height | 2.7 | 1.0 |  |
-| BAV99W | Width | 1.45 | 2.2 | 2 |
-| BAV99W | Height | 0.9 | 1.0 |  |
-| DFLS160 | Width | 3.0 | 1.93 | 1 |
-| MBR15U150 | Width | 5.5 | 4.1 | 2 |
-| MBR15U150 | Height | 1.0 | 1.2 |  |
+| 元件 | 欄位 | 抽取值 | 標準答案 |
+| --- | --- | --- | --- |
+| 1N4148W | Height | 1.65 | 1.35 |
+| 1N4148W | I_O/I_F | 0.3 | 0.15 |
+| BAS21H | Length | 1.8 | 2.7 |
+| BAS21H | Height | 2.7 | 1.0 |
+| BAV99W | Width | 1.45 | 2.2 |
+| BAV99W | Height | 0.9 | 1.0 |
+| DFLS160 | Width | 3.0 | 1.93 |
+| MBR15U150 | Width | 5.5 | 4.1 |
+| MBR15U150 | Height | 1.0 | 1.2 |
 
-這 9 格中 8 格是尺寸（長/寬/高，多為「本體 vs 含引腳跨距」的定義差異或 multi-product datasheet 結構性困難），1 格是電流（1N4148W 的 I_O/I_F）。
+上表每一列即一個未對上的格，合計 9 格；其中 8 格是尺寸（長/寬/高，多為「本體 vs 含引腳跨距」的定義差異或 multi-product datasheet 結構性困難），1 格是電流（1N4148W 的 I_O/I_F）。
 
 ---
 

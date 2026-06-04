@@ -1,11 +1,11 @@
-"""任務四 webapp：Datasheet 參數提取系統 (V47)
+"""任務四 webapp：Datasheet 參數提取系統（整合版）
 
 跑法：
     pip install streamlit
     streamlit run app.py
 
 兩個區塊：
-  區塊一「10 顆 SPEC 示範成果」— 讀已跑好的 V47 結果，逐格對照 specbook 標答，秒出、零 API。
+  區塊一「10 顆 SPEC 示範成果」— 讀已跑好的整合版（零 overfit）結果，逐格對照 specbook 標答，秒出、零 API。
   區塊二「上傳 PDF 即時跑」— 端到端單模型抽取（GPT-4o + 自我檢查）+ Llama swap 偵測。
 """
 import os
@@ -27,7 +27,7 @@ try:
 except Exception:
     pass
 
-st.set_page_config(page_title="Datasheet 參數提取系統 V47", layout="wide")
+st.set_page_config(page_title="Datasheet 參數提取系統", layout="wide")
 
 # 11 欄位的短顯示名（表頭用短名，原始長名仍是資料 key）
 SHORT = {
@@ -66,14 +66,16 @@ def cell_ok(ext, exp, field):
 
 @st.cache_data
 def load_demo_results():
-    """讀 V47 已存結果 + specbook，算出逐格對錯。回 (rows, correct, total)。"""
+    """讀整合版（零 overfit）已存結果 + specbook，算出逐格對錯。回 (rows, correct, total)。"""
     spec = load_specbook(config.SPECBOOK_PATH)
-    v47 = json.loads(
-        (config.ARCHIVE_DIR / "v47_llama_swap_only" / "results.json").read_text(encoding="utf-8")
-    )
+    results_path = config.ARCHIVE_DIR / "v_clean_dim_integrated" / "results.json"
+    if not results_path.exists():
+        st.error(f"找不到示範結果檔：{results_path}（完整版本歸檔請見 GitHub）")
+        st.stop()
+    data = json.loads(results_path.read_text(encoding="utf-8"))
     rows, correct, total = [], 0, 0
     for pn, exp_rec in spec.items():
-        e = v47.get(pn, {})
+        e = data.get(pn, {})
         cells = {}
         for f in FIELDS:
             ok = bool(cell_ok(e.get(f), exp_rec.get(f), f))
@@ -323,7 +325,7 @@ def render_live_result(pn, answer, swap_info):
 # =====================================================================
 # 版面
 # =====================================================================
-st.title("Datasheet 參數提取系統　V47")
+st.title("Datasheet 參數提取系統　整合版")
 st.caption("上傳電子元件 datasheet PDF，自動抽取 11 個規格欄位。")
 
 with st.expander("方法說明　—　對應四個任務", expanded=False):
@@ -336,8 +338,8 @@ with st.expander("方法說明　—　對應四個任務", expanded=False):
         "`response_format={\"type\":\"json_object\"}`（Azure / OpenAI JSON mode），"
         "本地 Ollama 帶 `format=\"json\"`，由 API 在解碼層就約束模型只能吐合法 JSON，"
         "不是在 prompt 裡拜託模型「請輸出 JSON」。所以結果能穩定進資料庫。\n\n"
-        "**任務三　10 筆批次、每欄 ≥ 50%**　10 份 datasheet 全跑，總準確率 95.0%（95/100，Part Number 為給定輸入不計分），"
-        "每個欄位都遠超 50% 門檻（見下方區塊一）。\n\n"
+        "**任務三　10 筆批次、每欄 ≥ 50%**　10 份 datasheet 全跑，總準確率 91.0%（91/100，零 overfit 整合版，Part Number 為給定輸入不計分），"
+        "每個欄位都超過 50% 門檻（見下方區塊一）。\n\n"
         "**任務四　本機 webapp**　即本頁，`streamlit run app.py` 本機部署，"
         "可上傳檔案試用（區塊二）。"
     )
@@ -345,7 +347,7 @@ with st.expander("方法說明　—　對應四個任務", expanded=False):
 rows, correct, total = load_demo_results()
 pct = correct / total * 100 if total else 0
 with st.expander(f"①　10 顆 SPEC 示範成果　—　{pct:.1f}%　({correct}/{total} 格正確)", expanded=True):
-    st.caption("讀取已跑好的結果，秒出、零 API 呼叫。紅底為與 specbook 標答不符的格子（共 5 格，皆為已知天花板）。")
+    st.caption("讀取已跑好的整合版結果，秒出、零 API 呼叫。紅底為與 specbook 標答不符的格子（共 9 格，多為尺寸圖面與標答口徑差異）。")
     render_demo_table(rows)
 
 st.divider()
@@ -353,17 +355,19 @@ st.divider()
 st.subheader("②　上傳 PDF 即時跑")
 st.info(
     "即時抽取為「單模型 GPT-4o 看圖 + 自我檢查 + Llama swap 偵測」版本（約 80%），"
-    "非完整 8 層 V47（95.0%）。每顆約 1～2 分鐘，需 Azure 金鑰在線。"
+    "非最終整合版（91/100）。每顆約 1～2 分鐘，需 Azure 金鑰在線。"
 )
 files = st.file_uploader("拖曳 PDF 到這裡（可一次多檔）", type=["pdf"], accept_multiple_files=True)
 if files and st.button("開始即時抽取", type="primary"):
     for f in files:
         pn = Path(f.name).stem
         with st.spinner(f"正在抽取 {f.name} … 呼叫 GPT-4o 看圖 + Llama 複核"):
-            tmp = Path(tempfile.gettempdir()) / f.name
+            # 暫存檔名 sanitize：避免同名覆蓋與 Windows 非法字元（pn 仍用原始檔名當型號）
+            safe_stem = "".join(c if c.isalnum() or c in "-_" else "_" for c in pn) or "upload"
+            tmp = Path(tempfile.gettempdir()) / f"{safe_stem}_{datetime.now():%H%M%S%f}.pdf"
             tmp.write_bytes(f.getbuffer())
             try:
-                answer, swap_info = run_live(tmp, pn)
+                answer, swap_info, _log_md, _log_jsonl, _result_json = run_live(tmp, pn)
                 render_live_result(pn, answer, swap_info)
             except Exception as e:
                 st.error(f"{f.name} 抽取失敗：{type(e).__name__}: {e}")

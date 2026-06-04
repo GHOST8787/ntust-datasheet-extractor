@@ -26,7 +26,7 @@ COVER_TITLE_LINE1 = "Datasheet 參數提取系統"
 COVER_TITLE_LINE2 = "成果報告"
 COVER_COURSE = "NTUST AI 課程　期末作業"
 COVER_NAME = "黃姿晴"
-COVER_DATE = "2026 / 05 / 30"
+COVER_DATE = "2026 / 06 / 04"
 
 
 def set_fonts(run, ascii_font=ASCII_FONT, cjk_font=CJK_FONT):

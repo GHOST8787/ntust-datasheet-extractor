@@ -10,7 +10,7 @@ NTUST_DATASHEET　黃姿晴　2026 / 06 / 02
 
 本專案處理作業提供的 10 份電子元件 datasheet PDF，與標準答案 `specbook.xlsx` 中 11 個結構化規格欄位的對應，目標是建立一套能自動、穩定、可驗證地從 PDF 抽取規格的系統，並將抽取結果與 `specbook.xlsx` 逐格比對計算準確率。
 
-本系統完整程式碼、各版本演進歷程與可重現歸檔，公開於 GitHub：https://github.com/GHOST8787/ntust-datasheet-extractor　。本繳交壓縮檔為精簡核心版，完整版本歸檔請見該倉庫。
+本作業提供兩種繳交包：DEMO 精簡版（核心程式與 webapp，供快速試跑）與完整紀錄版（含全部版本歸檔與迭代腳本，供查核可重現性）。完整程式碼與各版本演進歷程亦公開於 GitHub：https://github.com/GHOST8787/ntust-datasheet-extractor
 
 ## 第二節　任務目標
 

@@ -2,13 +2,15 @@
 >
 > 本文件下方若有「V47 NOT OVERFIT」「holdout 92.7%」「95.5% 不 overfit」等結論，均已被推翻。
 > 評分集只有 10 份 spec；V37 起（含 V44 95.5%、最終 V47）的後處理規則門檻是逐顆 spec 反推的，屬對評分集 overfit。
-> 完整逐版判定見專案根目錄 `OVERFIT_AUDIT.md`。乾淨可交版本：V23（85.5%）或 V31（89.1%，需註明為不加 part-specific 規則的上限）。
+> 完整逐版判定見專案根目錄 `OVERFIT_AUDIT.md`。乾淨可交版本：V23（100 格對 86 格）或 V31（100 格對 90 格，需註明為不加 part-specific 規則的上限）。最終繳交採零 overfit 整合版 91/100。
 
 ---
 
 # Datasheet 參數提取系統（NTUST AI 期末作業）
 
 從 10 份電子元件 datasheet PDF 自動提取 11 個結構化規格欄位，與 `data/specbook.xlsx` 標答比對計算準確率，並提供本機 webapp 上傳試用。
+
+> **繳交包說明**：本作業提供兩種壓縮包——**DEMO 精簡版**（核心程式 + webapp + 兩份報告，供快速試跑）與**完整紀錄版**（含全部版本歸檔 `output/_archive/`、迭代腳本 `experiments/` 與 log，供查核可重現性）。下方「目錄結構」與本說明對應**完整紀錄版／GitHub**；DEMO 精簡版僅含核心子集，完整版本歷程請見完整紀錄版或 GitHub。
 
 **最終成果：91 / 100 = 91.0%（零 overfit 整合版，每個欄位皆 ≥ 6/10）。** Part Number 為作業給定的輸入不列入計分，故評分範圍為 10 個需從 PDF 抽取的欄位 × 10 元件 = 100 格。開發過程 train 分數更高的 V44/V47（達 105/110）已判定為對評分集 overfit，不採為最終成果，詳見 `OVERFIT_AUDIT.md`。
 
