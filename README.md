@@ -10,7 +10,7 @@
 
 從 10 份電子元件 datasheet PDF 自動提取 11 個結構化規格欄位，與 `data/specbook.xlsx` 標答比對計算準確率，並提供本機 webapp 上傳試用。
 
-**最終準確率：105 / 110 = 95.5%（每個欄位皆 ≥ 80%）。**
+**最終成果：91 / 100 = 91.0%（零 overfit 整合版，每個欄位皆 ≥ 6/10）。** Part Number 為作業給定的輸入不列入計分，故評分範圍為 10 個需從 PDF 抽取的欄位 × 10 元件 = 100 格。開發過程 train 分數更高的 V44/V47（達 105/110）已判定為對評分集 overfit，不採為最終成果，詳見 `OVERFIT_AUDIT.md`。
 
 四個任務怎麼完成、成果數據佐證、以及對 overfit 的誠實討論，詳見 **[REPORT.md](REPORT.md)**。
 
@@ -18,7 +18,7 @@
 
 1. **VLM 解析尺寸圖面** — PDF 光柵化成圖餵 GPT-4o 多模態看圖判讀尺寸（傳統 OCR 抓不到的圖面）。
 2. **強制 100% 合法 JSON** — API 層 JSON mode（Azure `response_format=json_object` / Ollama `format=json`），非 prompt 祈求。
-3. **批次 10 筆、每欄 ≥ 50%** — 全跑 95.5%，逐欄正確率見 REPORT.md。
+3. **批次 10 筆、每欄 ≥ 50%** — 全跑 91/100（91.0%），逐欄最低 6/10（60%）皆過門檻，詳見 REPORT.md。
 4. **本機 webapp** — `streamlit run app.py`，可上傳檔案即時試用。
 
 ## 環境需求
@@ -68,7 +68,7 @@ webapp 兩個區塊：
 ## 目錄結構
 
 ```
-20260508_期末作業/
+ntust-datasheet-extractor/
 ├── app.py              任務四 webapp（Streamlit）
 ├── REPORT.md           成果報告（四任務 + 數據佐證）
 ├── README.md
@@ -93,7 +93,8 @@ webapp 兩個區塊：
 ├── experiments/        各版本迭代腳本（run_v4 ~ run_v48）+ 額外 PDF 抽取
 ├── scripts/            一次性診斷與分析工具
 ├── logs/               各版本執行 log
-└── docs/               課程簡報與補充文件
+├── docs/               課程簡報與補充文件
+└── 正式排版報告/       論文格式排版的成果報告（REPORT_formal.md + docx + 產生器）
 ```
 
 ## 提取欄位（共 11 項）

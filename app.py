@@ -78,6 +78,9 @@ def load_demo_results():
         for f in FIELDS:
             ok = bool(cell_ok(e.get(f), exp_rec.get(f), f))
             cells[f] = {"val": e.get(f), "exp": exp_rec.get(f), "ok": ok}
+            # Part Number 是作業給定的輸入，不列入計分（統一 100 格基準）
+            if f == "Part Number":
+                continue
             total += 1
             correct += int(ok)
         rows.append({"pn": pn, "cells": cells})
@@ -333,7 +336,7 @@ with st.expander("方法說明　—　對應四個任務", expanded=False):
         "`response_format={\"type\":\"json_object\"}`（Azure / OpenAI JSON mode），"
         "本地 Ollama 帶 `format=\"json\"`，由 API 在解碼層就約束模型只能吐合法 JSON，"
         "不是在 prompt 裡拜託模型「請輸出 JSON」。所以結果能穩定進資料庫。\n\n"
-        "**任務三　10 筆批次、每欄 ≥ 50%**　10 份 datasheet 全跑，總準確率 95.5%（105/110），"
+        "**任務三　10 筆批次、每欄 ≥ 50%**　10 份 datasheet 全跑，總準確率 95.0%（95/100，Part Number 為給定輸入不計分），"
         "每個欄位都遠超 50% 門檻（見下方區塊一）。\n\n"
         "**任務四　本機 webapp**　即本頁，`streamlit run app.py` 本機部署，"
         "可上傳檔案試用（區塊二）。"
@@ -350,7 +353,7 @@ st.divider()
 st.subheader("②　上傳 PDF 即時跑")
 st.info(
     "即時抽取為「單模型 GPT-4o 看圖 + 自我檢查 + Llama swap 偵測」版本（約 80%），"
-    "非完整 8 層 V47（95.5%）。每顆約 1～2 分鐘，需 Azure 金鑰在線。"
+    "非完整 8 層 V47（95.0%）。每顆約 1～2 分鐘，需 Azure 金鑰在線。"
 )
 files = st.file_uploader("拖曳 PDF 到這裡（可一次多檔）", type=["pdf"], accept_multiple_files=True)
 if files and st.button("開始即時抽取", type="primary"):
