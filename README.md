@@ -1,3 +1,5 @@
+**繁體中文** | [English](./README.en.md)
+
 > WARNING **更正聲明（2026-05-28 OVERFIT audit）**
 >
 > 本文件下方若有「V47 NOT OVERFIT」「holdout 92.7%」「95.5% 不 overfit」等結論，均已被推翻。
